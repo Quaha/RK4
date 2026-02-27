@@ -7,16 +7,32 @@
       "RelativeMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|solutionrelative:Window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\Window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|solutionrelative:Window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\solver.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|solutionrelative:solver.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\functions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|solutionrelative:functions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\Window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|solutionrelative:Window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\Window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|solutionrelative:Window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\solver.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|solutionrelative:solver.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\functions.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|solutionrelative:functions.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4FA31FBF-C2DD-5DD7-CB3D-DE12C36E83EF}|RK4.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,8 +53,60 @@
               "ToolTip": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\Window.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "Window.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-27T12:27:29.825Z",
+              "WhenOpened": "2026-02-27T12:37:20.792Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "solver.cpp",
+              "DocumentMoniker": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\solver.cpp",
+              "RelativeDocumentMoniker": "solver.cpp",
+              "ToolTip": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\solver.cpp",
+              "RelativeToolTip": "solver.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-27T12:34:31.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "functions.cpp",
+              "DocumentMoniker": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\functions.cpp",
+              "RelativeDocumentMoniker": "functions.cpp",
+              "ToolTip": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\functions.cpp",
+              "RelativeToolTip": "functions.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-27T12:34:29.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "solver.hpp",
+              "DocumentMoniker": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\solver.hpp",
+              "RelativeDocumentMoniker": "solver.hpp",
+              "ToolTip": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\solver.hpp",
+              "RelativeToolTip": "solver.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-27T12:34:25.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "functions.hpp",
+              "DocumentMoniker": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\functions.hpp",
+              "RelativeDocumentMoniker": "functions.hpp",
+              "ToolTip": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\functions.hpp",
+              "RelativeToolTip": "functions.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-27T12:34:24.065Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -46,20 +114,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Window.h",
               "DocumentMoniker": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\Window.h",
               "RelativeDocumentMoniker": "Window.h",
               "ToolTip": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\Window.h",
               "RelativeToolTip": "Window.h",
-              "ViewState": "AgIAACsAAAAAAAAAAAAywEAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAA2wK0BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-02-27T12:16:17.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "main.cpp",
               "DocumentMoniker": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
@@ -67,12 +135,11 @@
               "RelativeToolTip": "main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-02-27T12:15:27.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T12:15:27.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Window.cpp",
               "DocumentMoniker": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\Window.cpp",
               "RelativeDocumentMoniker": "Window.cpp",
