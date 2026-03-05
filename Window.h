@@ -51,8 +51,10 @@ namespace RK4 {
 	private: System::Windows::Forms::DataGridView^ tab1_dataGridView;
 
 
-	private: System::Windows::Forms::DataVisualization::Charting::Chart^ chart2;
-	private: System::Windows::Forms::DataVisualization::Charting::Chart^ chart1;
+
+
+	private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab1_chart1;
+
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label3;
@@ -98,9 +100,6 @@ namespace RK4 {
 			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
 			System::Windows::Forms::DataVisualization::Charting::Legend^ legend1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
 			System::Windows::Forms::DataVisualization::Charting::Series^ series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea2 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^ legend2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^ series2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Window::typeid));
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
@@ -123,16 +122,14 @@ namespace RK4 {
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->tab1_dataGridView = (gcnew System::Windows::Forms::DataGridView());
-			this->chart2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
-			this->chart1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
+			this->tab1_chart1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab1_dataGridView))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart2))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab1_chart1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// tabControl1
@@ -171,8 +168,7 @@ namespace RK4 {
 			this->tabPage1->Controls->Add(this->label2);
 			this->tabPage1->Controls->Add(this->label1);
 			this->tabPage1->Controls->Add(this->tab1_dataGridView);
-			this->tabPage1->Controls->Add(this->chart2);
-			this->tabPage1->Controls->Add(this->chart1);
+			this->tabPage1->Controls->Add(this->tab1_chart1);
 			this->tabPage1->Cursor = System::Windows::Forms::Cursors::Default;
 			this->tabPage1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -370,37 +366,22 @@ namespace RK4 {
 			this->tab1_dataGridView->Size = System::Drawing::Size(802, 237);
 			this->tab1_dataGridView->TabIndex = 2;
 			// 
-			// chart2
+			// tab1_chart1
 			// 
 			chartArea1->Name = L"ChartArea1";
-			this->chart2->ChartAreas->Add(chartArea1);
+			this->tab1_chart1->ChartAreas->Add(chartArea1);
+			this->tab1_chart1->Cursor = System::Windows::Forms::Cursors::Default;
 			legend1->Name = L"Legend1";
-			this->chart2->Legends->Add(legend1);
-			this->chart2->Location = System::Drawing::Point(410, 6);
-			this->chart2->Name = L"chart2";
+			this->tab1_chart1->Legends->Add(legend1);
+			this->tab1_chart1->Location = System::Drawing::Point(6, 6);
+			this->tab1_chart1->Name = L"tab1_chart1";
 			series1->ChartArea = L"ChartArea1";
 			series1->Legend = L"Legend1";
-			series1->Name = L"Series1";
-			this->chart2->Series->Add(series1);
-			this->chart2->Size = System::Drawing::Size(398, 393);
-			this->chart2->TabIndex = 1;
-			this->chart2->Text = L"chart2";
-			// 
-			// chart1
-			// 
-			chartArea2->Name = L"ChartArea1";
-			this->chart1->ChartAreas->Add(chartArea2);
-			legend2->Name = L"Legend1";
-			this->chart1->Legends->Add(legend2);
-			this->chart1->Location = System::Drawing::Point(6, 6);
-			this->chart1->Name = L"chart1";
-			series2->ChartArea = L"ChartArea1";
-			series2->Legend = L"Legend1";
-			series2->Name = L"Series1";
-			this->chart1->Series->Add(series2);
-			this->chart1->Size = System::Drawing::Size(398, 393);
-			this->chart1->TabIndex = 0;
-			this->chart1->Text = L"chart1";
+			series1->Name = L" График не построен";
+			this->tab1_chart1->Series->Add(series1);
+			this->tab1_chart1->Size = System::Drawing::Size(802, 393);
+			this->tab1_chart1->TabIndex = 0;
+			this->tab1_chart1->Text = L"chart1";
 			// 
 			// tabPage2
 			// 
@@ -445,8 +426,7 @@ namespace RK4 {
 			this->tabPage1->ResumeLayout(false);
 			this->tabPage1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab1_dataGridView))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart2))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab1_chart1))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -463,6 +443,8 @@ private: System::Void tab1_button1_Click(System::Object^ sender, System::EventAr
 	TextBox^ tb_Nmax = this->tab1_Nmax;
 	TextBox^ tb_u0 = this->tab1_u0;
 	DataGridView^ dgv = this->tab1_dataGridView;
+
+	System::Windows::Forms::DataVisualization::Charting::Chart^ chart1 = this->tab1_chart1;
 
 	double a, b, EPS_b, h, u0;
 	int Nmax;
@@ -540,12 +522,17 @@ private: System::Void tab1_button1_Click(System::Object^ sender, System::EventAr
 	double x = a;
 	vd v = { u0 };
 	int i = 0;
+	std::vector<double> xs, vs, us; // для хранения точек графиков
 
 	// Вычисление точного решения в начальной точке
 	double ui = exact_f1(x, a, u0);
 	double abs_err = std::abs(ui - v[0]);
 	dgv->Rows->Add(i.ToString(), x.ToString("F6"), v[0].ToString("F6"), "-",
 		ui.ToString("F6"), abs_err.ToString("F6"));
+
+	xs.push_back(x);
+	vs.push_back(v[0]);
+	us.push_back(ui);
 
 	// Основной цикл интегрирования
 	while (x < b - EPS_b && i < Nmax) {
@@ -566,6 +553,10 @@ private: System::Void tab1_button1_Click(System::Object^ sender, System::EventAr
 		abs_err = std::abs(ui - v[0]);
 		dgv->Rows->Add(i.ToString(), x.ToString("F6"), v[0].ToString("F6"),
 			hi.ToString("F6"), ui.ToString("F6"), abs_err.ToString("F6"));
+
+		xs.push_back(x);
+		vs.push_back(v[0]);
+		us.push_back(ui);
 	}
 
 	// Формирование отчёта о завершении
@@ -586,6 +577,79 @@ private: System::Void tab1_button1_Click(System::Object^ sender, System::EventAr
 	tab1_richTextBox1->Clear();
 	tab1_richTextBox1->AppendText(report);
 
+	using namespace System::Windows::Forms::DataVisualization::Charting;
+
+
+
+	// Очистка старых серий
+	chart1->Series->Clear();
+
+	tab1_chart1->MouseWheel += gcnew MouseEventHandler(this, &Window::chart_MouseWheel);
+
+	auto area = tab1_chart1->ChartAreas[0];
+
+	// убираем линии курсора
+	area->CursorX->LineColor = System::Drawing::Color::Transparent;
+	area->CursorY->LineColor = System::Drawing::Color::Transparent;
+
+	// отключаем авто-интервалы
+	area->AxisX->IntervalAutoMode =
+		System::Windows::Forms::DataVisualization::Charting::IntervalAutoMode::VariableCount;
+
+	// Создание серий для первого графика
+	Series^ seriesExact1 = gcnew Series();
+	seriesExact1->Name = "Точное решение";
+	seriesExact1->ChartType = SeriesChartType::Line;
+	seriesExact1->BorderWidth = 2;
+
+	Series^ seriesRK41 = gcnew Series();
+	seriesRK41->Name = "РК4";
+	seriesRK41->ChartType = SeriesChartType::Point;
+	seriesRK41->MarkerSize = 8;
+	seriesRK41->MarkerStyle = MarkerStyle::Circle;
+
+	// Добавляем серии на графики
+	chart1->Series->Add(seriesExact1);
+	chart1->Series->Add(seriesRK41);
+
+	// Заполняем точки
+	for (size_t j = 0; j < xs.size(); ++j) {
+		seriesExact1->Points->AddXY(xs[j], us[j]);
+		seriesRK41->Points->AddXY(xs[j], vs[j]);
+	}
+
 }
+
+private: System::Void chart_MouseWheel(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e)
+{
+	auto area = tab1_chart1->ChartAreas[0];
+
+	try
+	{
+		double xMin = area->AxisX->ScaleView->ViewMinimum;
+		double xMax = area->AxisX->ScaleView->ViewMaximum;
+
+		double posX = area->AxisX->PixelPositionToValue(e->Location.X);
+
+		double scale = (xMax - xMin) / 4.0;
+
+		if (e->Delta > 0) // zoom in
+		{
+			double newMin = posX - scale;
+			double newMax = posX + scale;
+
+			area->AxisX->ScaleView->Zoom(newMin, newMax);
+		}
+		else if (e->Delta < 0) // zoom out
+		{
+			double newMin = xMin - scale;
+			double newMax = xMax + scale;
+
+			area->AxisX->ScaleView->Zoom(newMin, newMax);
+		}
+	}
+	catch (...) {}
+}
+
 };
 }

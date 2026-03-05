@@ -46,6 +46,22 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Window.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\Window.h",
+              "RelativeDocumentMoniker": "Window.h",
+              "ToolTip": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\Window.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "RelativeToolTip": "Window.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-05T19:46:38.253Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "functions.hpp",
               "DocumentMoniker": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\functions.hpp",
@@ -54,20 +70,7 @@
               "RelativeToolTip": "functions.hpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-27T12:34:24.065Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Window.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\Window.h",
-              "RelativeDocumentMoniker": "Window.h",
-              "ToolTip": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\Window.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Window.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-05T14:29:07.062Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2026-02-27T12:34:24.065Z"
             },
             {
               "$type": "Document",
@@ -79,8 +82,7 @@
               "RelativeToolTip": "solver.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-02-27T12:34:31.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T12:34:31.735Z"
             },
             {
               "$type": "Document",
@@ -92,8 +94,7 @@
               "RelativeToolTip": "functions.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-02-27T12:34:29.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T12:34:29.753Z"
             },
             {
               "$type": "Document",
@@ -105,12 +106,7 @@
               "RelativeToolTip": "solver.hpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-27T12:34:25.38Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "WhenOpened": "2026-02-27T12:34:25.38Z"
             },
             {
               "$type": "Document",
@@ -118,9 +114,9 @@
               "Title": "Window.h",
               "DocumentMoniker": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\Window.h",
               "RelativeDocumentMoniker": "Window.h",
-              "ToolTip": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\Window.h",
-              "RelativeToolTip": "Window.h",
-              "ViewState": "AgIAAAsCAAAAAAAAAAAwwP4BAAAWAAAAAAAAAA==",
+              "ToolTip": "E:\\Dev\\MyC\u002B\u002BProjects\\RK4\\Window.h*",
+              "RelativeToolTip": "Window.h*",
+              "ViewState": "AgIAAG0CAAAAAAAAAAAwwIsCAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-02-27T12:16:17.369Z",
               "EditorCaption": ""
@@ -135,8 +131,7 @@
               "RelativeToolTip": "main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-02-27T12:15:27.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T12:15:27.323Z"
             },
             {
               "$type": "Document",
