@@ -35,7 +35,7 @@ namespace RK4 {
 		return std::make_pair(x_next, V_next);
 	}
 
-	std::pair<double, vd> RK4(const std::pair<double, vd>& point, const vf& F, double& h, double b, double EPS_b, double EPS, int& C1, int& C2, int& cnt_of_iterations, int max_iterations) {
+	std::pair<double, vd> RK4(const std::pair<double, vd>& point, const vf& F, double& h, double b, double EPS_b, double EPS, int& C1, int& C2, int& cnt_of_iterations, int max_iterations, vd& v2) {
 
 		cnt_of_iterations++;
 
@@ -52,10 +52,11 @@ namespace RK4 {
 		std::pair<double, vd> p2 = RK4(RK4(point, F, h / 2.0, b, EPS_b), F, h / 2.0, b, EPS_b);
 
 		if (cnt_of_iterations >= max_iterations) {
+			v2 = p2.second;
 			return p1;
 		}
 
-		vd S_abs(m, 0.0l);
+		vd S_abs(m, 0.0);
 		for (int j = 0; j < m; j++) {
 			S_abs[j] = std::abs(p2.second[j] - p1.second[j]) / 15.0;
 		}
@@ -74,13 +75,15 @@ namespace RK4 {
 		if (any_bad) {
 			h /= 2.0;
 			C1++;
-			return RK4(point, F, h, b, EPS_b, EPS, C1, C2, cnt_of_iterations, max_iterations);
+			return RK4(point, F, h, b, EPS_b, EPS, C1, C2, cnt_of_iterations, max_iterations, v2);
 		}
 
 		if (all_over) {
 			h *= 2.0;
 			C2++;
 		}
+
+		v2 = p2.second;
 
 		return p1;
 	}

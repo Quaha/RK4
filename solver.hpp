@@ -15,5 +15,5 @@ using vf = std::vector<ftype>;
 
 namespace RK4 {
 	std::pair<double, vd> RK4(const std::pair<double, vd>& point, const vf& F, double h, double b, double EPS_b);
-	std::pair<double, vd> RK4(const std::pair<double, vd>& point, const vf& F, double& h, double b, double EPS_b, double EPS, int& C1, int& C2, int& cnt_of_iterations, int max_iterations);
+	std::pair<double, vd> RK4(const std::pair<double, vd>& point, const vf& F, double& h, double b, double EPS_b, double EPS, int& C1, int& C2, int& cnt_of_iterations, int max_iterations, vd& v2);
 };
