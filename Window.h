@@ -269,6 +269,8 @@ namespace RK4 {
 			// 
 			// tab1_Nmax
 			// 
+			this->tab1_Nmax->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
 			this->tab1_Nmax->Location = System::Drawing::Point(1092, 486);
 			this->tab1_Nmax->Name = L"tab1_Nmax";
 			this->tab1_Nmax->Size = System::Drawing::Size(110, 20);
@@ -288,6 +290,8 @@ namespace RK4 {
 			// 
 			// tab1_u0
 			// 
+			this->tab1_u0->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
 			this->tab1_u0->Location = System::Drawing::Point(1092, 430);
 			this->tab1_u0->Name = L"tab1_u0";
 			this->tab1_u0->Size = System::Drawing::Size(110, 20);
@@ -307,6 +311,8 @@ namespace RK4 {
 			// 
 			// tab1_h
 			// 
+			this->tab1_h->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
 			this->tab1_h->Location = System::Drawing::Point(876, 603);
 			this->tab1_h->Name = L"tab1_h";
 			this->tab1_h->Size = System::Drawing::Size(110, 20);
@@ -326,6 +332,8 @@ namespace RK4 {
 			// 
 			// tab1_EPS_b
 			// 
+			this->tab1_EPS_b->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
 			this->tab1_EPS_b->Location = System::Drawing::Point(876, 542);
 			this->tab1_EPS_b->Name = L"tab1_EPS_b";
 			this->tab1_EPS_b->Size = System::Drawing::Size(110, 20);
@@ -345,6 +353,8 @@ namespace RK4 {
 			// 
 			// tab1_b
 			// 
+			this->tab1_b->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
 			this->tab1_b->Location = System::Drawing::Point(876, 486);
 			this->tab1_b->Name = L"tab1_b";
 			this->tab1_b->Size = System::Drawing::Size(110, 20);
@@ -364,6 +374,8 @@ namespace RK4 {
 			// 
 			// tab1_a
 			// 
+			this->tab1_a->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
 			this->tab1_a->Location = System::Drawing::Point(876, 430);
 			this->tab1_a->Name = L"tab1_a";
 			this->tab1_a->Size = System::Drawing::Size(110, 20);
@@ -372,6 +384,8 @@ namespace RK4 {
 			// 
 			// tab1_richTextBox1
 			// 
+			this->tab1_richTextBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
 			this->tab1_richTextBox1->Location = System::Drawing::Point(814, 136);
 			this->tab1_richTextBox1->Name = L"tab1_richTextBox1";
 			this->tab1_richTextBox1->Size = System::Drawing::Size(436, 263);
