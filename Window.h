@@ -867,12 +867,15 @@ private: System::Void tab1_button1_Click(System::Object^ sender, System::EventAr
 	// Вычисление точного решения в начальной точке
 	double ui = exact_f1(x, a, u0);
 	double abs_err = std::abs(ui - v[0]);
-	dgv->Rows->Add(i.ToString(), x.ToString("F6"), v[0].ToString("F6"), "-",
-		ui.ToString("F6"), abs_err.ToString("F6"));
+	dgv->Rows->Add(i.ToString(), x.ToString("F10"), v[0].ToString("F10"), "-",
+		ui.ToString("F10"), abs_err.ToString("F10"));
 
 	xs.push_back(x);
 	vs.push_back(v[0]);
 	us.push_back(ui);
+
+	double max_abs_err = abs_err;
+	double max_abs_err_x = x;
 
 	// Основной цикл интегрирования
 	while (x < b - EPS_b && i < Nmax) {
@@ -891,8 +894,13 @@ private: System::Void tab1_button1_Click(System::Object^ sender, System::EventAr
 		// Точное решение в новой точке
 		ui = exact_f1(x, a, u0);
 		abs_err = std::abs(ui - v[0]);
-		dgv->Rows->Add(i.ToString(), x.ToString("F6"), v[0].ToString("F6"),
-			hi.ToString("F6"), ui.ToString("F6"), abs_err.ToString("F6"));
+		dgv->Rows->Add(i.ToString(), x.ToString("F10"), v[0].ToString("F10"),
+			hi.ToString("F10"), ui.ToString("F10"), abs_err.ToString("F10"));
+
+		if (abs_err > max_abs_err) {
+			max_abs_err = abs_err;
+			max_abs_err_x = x;
+		}
 
 		xs.push_back(x);
 		vs.push_back(v[0]);
@@ -903,15 +911,25 @@ private: System::Void tab1_button1_Click(System::Object^ sender, System::EventAr
 	String^ report;
 	if (x >= b - EPS_b) {
 		report = String::Format(
-			"Интегрирование завершено: достигнута правая граница b = {0:F6} на итерации {1} с точностью до EPS_b. Последний x = {2:F6}",
+			"Достигнута правая граница b = {0:F10} на итерации {1} с точностью до EPS_b. Последний x = {2:F10}",
 			b, i, x);
 	}
 	else {
 		report = String::Format(
-			"Внимание: достигнуто максимальное число итераций Nmax = {0} на итерации {1}, "
-			"но правая граница b = {2:F6} не достигнута. Последний x = {3:F6}",
+			"Достигнуто максимальное число итераций Nmax = {0} на итерации {1}, "
+			"но правая граница b = {2:F10} не достигнута. Последний x = {3:F10}",
 			Nmax, i, b, x);
 	}
+
+	report += String::Format(
+		"\n\nmax |ui - vi| = {0:F10} при x = {1:F10}"
+		"\n\nn = {2},  b - xn = {3:F10}",
+		max_abs_err, max_abs_err_x,
+		i, (b - x)
+	);
+
+	tab1_richTextBox1->Clear();
+	tab1_richTextBox1->AppendText(report);
 
 	// Вывод в RichTextBox
 	tab1_richTextBox1->Clear();
@@ -1103,16 +1121,16 @@ private: System::Void tab2_button1_Click(System::Object^ sender, System::EventAr
 
 	dgv->Rows->Add(
 		"0",
-		x.ToString("F6"),
-		v[0].ToString("F6"),
+		x.ToString("F10"),
+		v[0].ToString("F10"),
 		"-",
 		"-",
 		"-",
 		"-",
 		"0",
 		"0",
-		ui.ToString("F6"),
-		Math::Abs(ui - v[0]).ToString("F6")
+		ui.ToString("F10"),
+		Math::Abs(ui - v[0]).ToString("F10")
 	);
 
 	xs.push_back(x);
@@ -1122,6 +1140,13 @@ private: System::Void tab2_button1_Click(System::Object^ sender, System::EventAr
 	int C1 = 0;
 	int C2 = 0;
 	int cnt_iter = 0;
+
+	double max_abs_diff = Math::Abs(exact_f1(x, a, u0) - v[0]);
+	double max_abs_diff_x = x;
+	double max_olp = 0.0;
+	double max_hi = h, min_hi = h;
+	double max_hi_x = x, min_hi_x = x;
+	int total_C1 = 0, total_C2 = 0;
 
 	while (x < b - EPS_b && i < Nmax) {
 
@@ -1161,18 +1186,36 @@ private: System::Void tab2_button1_Click(System::Object^ sender, System::EventAr
 
 		ui = exact_f1(x, a, u0);
 
+		if (std::abs(ui - v[0]) > max_abs_diff) {
+			max_abs_diff = std::abs(ui - v[0]);
+			max_abs_diff_x = x;
+		}
+		if (olp > max_olp) {
+			max_olp = olp;
+		}
+		if (hi > max_hi) {
+			max_hi = hi;
+			max_hi_x = x;
+		}
+		if (hi < min_hi) {
+			min_hi = hi;
+			min_hi_x = x;
+		}
+		total_C1 += C1;
+		total_C2 += C2;
+
 		dgv->Rows->Add(
 			i.ToString(),
-			x.ToString("F6"),
-			v[0].ToString("F6"),
-			v2[0].ToString("F6"),
-			diff.ToString("F6"),
-			olp.ToString("F6"),
-			hi.ToString("F6"),
+			x.ToString("F10"),
+			v[0].ToString("F10"),
+			v2[0].ToString("F10"),
+			diff.ToString("F10"),
+			olp.ToString("F10"),
+			hi.ToString("F10"),
 			C1.ToString(),
 			C2.ToString(),
-			ui.ToString("F6"),
-			std::abs(ui - v[0]).ToString("F6")
+			ui.ToString("F10"),
+			std::abs(ui - v[0]).ToString("F10")
 		);
 
 		xs.push_back(x);
@@ -1185,14 +1228,30 @@ private: System::Void tab2_button1_Click(System::Object^ sender, System::EventAr
 
 	if (x >= b - EPS_b) {
 		report = String::Format(
-			"Достигнута правая граница b = {0:F6} на шаге {1} с точностью до EPS_b",
+			"Достигнута правая граница b = {0:F10} на шаге {1} с точностью до EPS_b",
 			b, i);
 	}
 	else {
 		report = String::Format(
-			"Достигнут предел итераций Nmax = {0}, x = {1:F6}",
+			"Достигнут предел итераций Nmax = {0}, x = {1:F10}",
 			Nmax, x);
 	}
+
+	report += String::Format(
+		"\n\nmax |ui - vi| = {0:F10} при x = {1:F10}"
+		"\n\nn = {2},  b - xn = {3:F10}"
+		"\nmax |ОЛП| = {4:F10}"
+		"\nОбщее число удвоений шага (C1) = {5}"
+		"\nОбщее число делений шага  (C2) = {6}"
+		"\nmax hi = {7:F10} при x = {8:F10}"
+		"\nmin hi = {9:F10} при x = {10:F10}",
+		max_abs_diff, max_abs_diff_x,
+		i, (b - x),
+		max_olp,
+		total_C1, total_C2,
+		max_hi, max_hi_x,
+		min_hi, min_hi_x
+	);
 
 	tab2_richTextBox1->Clear();
 	tab2_richTextBox1->AppendText(report);
