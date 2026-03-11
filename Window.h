@@ -143,6 +143,32 @@ private: System::Windows::Forms::Label^ label22;
 private: System::Windows::Forms::TextBox^ tab3_u_0;
 
 private: System::Windows::Forms::Label^ label33;
+private: System::Windows::Forms::Label^ label46;
+private: System::Windows::Forms::TextBox^ tab4_EPS;
+private: System::Windows::Forms::Label^ label34;
+private: System::Windows::Forms::TextBox^ tab4_u_0;
+private: System::Windows::Forms::Label^ label35;
+private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart2;
+private: System::Windows::Forms::Label^ label36;
+private: System::Windows::Forms::TextBox^ tab4_Nmax;
+private: System::Windows::Forms::Label^ label37;
+private: System::Windows::Forms::TextBox^ tab4_u0;
+private: System::Windows::Forms::Label^ label38;
+private: System::Windows::Forms::TextBox^ tab4_h;
+private: System::Windows::Forms::Label^ label39;
+private: System::Windows::Forms::TextBox^ tab4_EPS_b;
+private: System::Windows::Forms::Label^ label40;
+private: System::Windows::Forms::TextBox^ tab4_b;
+private: System::Windows::Forms::Label^ label41;
+private: System::Windows::Forms::TextBox^ tab4_a;
+private: System::Windows::Forms::RichTextBox^ tab4_richTextBox1;
+private: System::Windows::Forms::Button^ tab4_button1;
+private: System::Windows::Forms::Label^ label42;
+private: System::Windows::Forms::Label^ label43;
+private: System::Windows::Forms::Label^ label44;
+private: System::Windows::Forms::Label^ label45;
+private: System::Windows::Forms::DataGridView^ tab4_dataGridView1;
+private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1;
 
 
 
@@ -196,6 +222,12 @@ private: System::Windows::Forms::Label^ label33;
 			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea4 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
 			System::Windows::Forms::DataVisualization::Charting::Legend^ legend4 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
 			System::Windows::Forms::DataVisualization::Charting::Series^ series4 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea5 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^ legend5 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^ series5 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea6 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^ legend6 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^ series6 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Window::typeid));
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
@@ -268,6 +300,32 @@ private: System::Windows::Forms::Label^ label33;
 			this->tab3_dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->tab3_chart1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
 			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
+			this->label34 = (gcnew System::Windows::Forms::Label());
+			this->tab4_u_0 = (gcnew System::Windows::Forms::TextBox());
+			this->label35 = (gcnew System::Windows::Forms::Label());
+			this->tab4_chart2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
+			this->label36 = (gcnew System::Windows::Forms::Label());
+			this->tab4_Nmax = (gcnew System::Windows::Forms::TextBox());
+			this->label37 = (gcnew System::Windows::Forms::Label());
+			this->tab4_u0 = (gcnew System::Windows::Forms::TextBox());
+			this->label38 = (gcnew System::Windows::Forms::Label());
+			this->tab4_h = (gcnew System::Windows::Forms::TextBox());
+			this->label39 = (gcnew System::Windows::Forms::Label());
+			this->tab4_EPS_b = (gcnew System::Windows::Forms::TextBox());
+			this->label40 = (gcnew System::Windows::Forms::Label());
+			this->tab4_b = (gcnew System::Windows::Forms::TextBox());
+			this->label41 = (gcnew System::Windows::Forms::Label());
+			this->tab4_a = (gcnew System::Windows::Forms::TextBox());
+			this->tab4_richTextBox1 = (gcnew System::Windows::Forms::RichTextBox());
+			this->tab4_button1 = (gcnew System::Windows::Forms::Button());
+			this->label42 = (gcnew System::Windows::Forms::Label());
+			this->label43 = (gcnew System::Windows::Forms::Label());
+			this->label44 = (gcnew System::Windows::Forms::Label());
+			this->label45 = (gcnew System::Windows::Forms::Label());
+			this->tab4_dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
+			this->tab4_chart1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
+			this->label46 = (gcnew System::Windows::Forms::Label());
+			this->tab4_EPS = (gcnew System::Windows::Forms::TextBox());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab1_dataGridView))->BeginInit();
@@ -279,6 +337,10 @@ private: System::Windows::Forms::Label^ label33;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab3_chart2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab3_dataGridView1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab3_chart1))->BeginInit();
+			this->tabPage4->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab4_chart2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab4_dataGridView1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab4_chart1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// tabControl1
@@ -1087,12 +1149,308 @@ private: System::Windows::Forms::Label^ label33;
 			// 
 			// tabPage4
 			// 
+			this->tabPage4->Controls->Add(this->label46);
+			this->tabPage4->Controls->Add(this->tab4_EPS);
+			this->tabPage4->Controls->Add(this->label34);
+			this->tabPage4->Controls->Add(this->tab4_u_0);
+			this->tabPage4->Controls->Add(this->label35);
+			this->tabPage4->Controls->Add(this->tab4_chart2);
+			this->tabPage4->Controls->Add(this->label36);
+			this->tabPage4->Controls->Add(this->tab4_Nmax);
+			this->tabPage4->Controls->Add(this->label37);
+			this->tabPage4->Controls->Add(this->tab4_u0);
+			this->tabPage4->Controls->Add(this->label38);
+			this->tabPage4->Controls->Add(this->tab4_h);
+			this->tabPage4->Controls->Add(this->label39);
+			this->tabPage4->Controls->Add(this->tab4_EPS_b);
+			this->tabPage4->Controls->Add(this->label40);
+			this->tabPage4->Controls->Add(this->tab4_b);
+			this->tabPage4->Controls->Add(this->label41);
+			this->tabPage4->Controls->Add(this->tab4_a);
+			this->tabPage4->Controls->Add(this->tab4_richTextBox1);
+			this->tabPage4->Controls->Add(this->tab4_button1);
+			this->tabPage4->Controls->Add(this->label42);
+			this->tabPage4->Controls->Add(this->label43);
+			this->tabPage4->Controls->Add(this->label44);
+			this->tabPage4->Controls->Add(this->label45);
+			this->tabPage4->Controls->Add(this->tab4_dataGridView1);
+			this->tabPage4->Controls->Add(this->tab4_chart1);
 			this->tabPage4->Location = System::Drawing::Point(4, 29);
 			this->tabPage4->Name = L"tabPage4";
 			this->tabPage4->Size = System::Drawing::Size(1256, 648);
 			this->tabPage4->TabIndex = 3;
 			this->tabPage4->Text = L"Основная задача (адаптивный шаг)";
 			this->tabPage4->UseVisualStyleBackColor = true;
+			// 
+			// label34
+			// 
+			this->label34->AutoSize = true;
+			this->label34->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label34->Location = System::Drawing::Point(1088, 460);
+			this->label34->Name = L"label34";
+			this->label34->Size = System::Drawing::Size(33, 20);
+			this->label34->TabIndex = 93;
+			this->label34->Text = L"u\'0";
+			// 
+			// tab4_u_0
+			// 
+			this->tab4_u_0->Location = System::Drawing::Point(1137, 462);
+			this->tab4_u_0->Name = L"tab4_u_0";
+			this->tab4_u_0->Size = System::Drawing::Size(110, 20);
+			this->tab4_u_0->TabIndex = 92;
+			this->tab4_u_0->Text = L"2.0";
+			// 
+			// label35
+			// 
+			this->label35->AutoSize = true;
+			this->label35->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label35->Location = System::Drawing::Point(935, 84);
+			this->label35->Name = L"label35";
+			this->label35->Size = System::Drawing::Size(89, 20);
+			this->label35->TabIndex = 91;
+			this->label35->Text = L"u\'(a) = u\'0";
+			// 
+			// tab4_chart2
+			// 
+			chartArea5->Name = L"ChartArea1";
+			this->tab4_chart2->ChartAreas->Add(chartArea5);
+			this->tab4_chart2->Cursor = System::Windows::Forms::Cursors::Default;
+			legend5->Name = L"Legend1";
+			this->tab4_chart2->Legends->Add(legend5);
+			this->tab4_chart2->Location = System::Drawing::Point(439, 6);
+			this->tab4_chart2->Name = L"tab4_chart2";
+			series5->ChartArea = L"ChartArea1";
+			series5->Legend = L"Legend1";
+			series5->Name = L" График не построен";
+			this->tab4_chart2->Series->Add(series5);
+			this->tab4_chart2->Size = System::Drawing::Size(431, 393);
+			this->tab4_chart2->TabIndex = 90;
+			this->tab4_chart2->Text = L"chart2";
+			// 
+			// label36
+			// 
+			this->label36->AutoSize = true;
+			this->label36->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label36->Location = System::Drawing::Point(1078, 499);
+			this->label36->Name = L"label36";
+			this->label36->Size = System::Drawing::Size(53, 20);
+			this->label36->TabIndex = 89;
+			this->label36->Text = L"Nmax";
+			// 
+			// tab4_Nmax
+			// 
+			this->tab4_Nmax->Location = System::Drawing::Point(1137, 499);
+			this->tab4_Nmax->Name = L"tab4_Nmax";
+			this->tab4_Nmax->Size = System::Drawing::Size(110, 20);
+			this->tab4_Nmax->TabIndex = 88;
+			this->tab4_Nmax->Text = L"10000";
+			// 
+			// label37
+			// 
+			this->label37->AutoSize = true;
+			this->label37->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label37->Location = System::Drawing::Point(1088, 422);
+			this->label37->Name = L"label37";
+			this->label37->Size = System::Drawing::Size(29, 20);
+			this->label37->TabIndex = 87;
+			this->label37->Text = L"u0";
+			// 
+			// tab4_u0
+			// 
+			this->tab4_u0->Location = System::Drawing::Point(1137, 424);
+			this->tab4_u0->Name = L"tab4_u0";
+			this->tab4_u0->Size = System::Drawing::Size(110, 20);
+			this->tab4_u0->TabIndex = 86;
+			this->tab4_u0->Text = L"2.0";
+			// 
+			// label38
+			// 
+			this->label38->AutoSize = true;
+			this->label38->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label38->Location = System::Drawing::Point(878, 499);
+			this->label38->Name = L"label38";
+			this->label38->Size = System::Drawing::Size(64, 20);
+			this->label38->TabIndex = 85;
+			this->label38->Text = L"EPS_b";
+			// 
+			// tab4_h
+			// 
+			this->tab4_h->Location = System::Drawing::Point(944, 538);
+			this->tab4_h->Name = L"tab4_h";
+			this->tab4_h->Size = System::Drawing::Size(110, 20);
+			this->tab4_h->TabIndex = 84;
+			this->tab4_h->Text = L"0.01";
+			// 
+			// label39
+			// 
+			this->label39->AutoSize = true;
+			this->label39->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label39->Location = System::Drawing::Point(899, 536);
+			this->label39->Name = L"label39";
+			this->label39->Size = System::Drawing::Size(29, 20);
+			this->label39->TabIndex = 83;
+			this->label39->Text = L"h0";
+			// 
+			// tab4_EPS_b
+			// 
+			this->tab4_EPS_b->Location = System::Drawing::Point(944, 499);
+			this->tab4_EPS_b->Name = L"tab4_EPS_b";
+			this->tab4_EPS_b->Size = System::Drawing::Size(110, 20);
+			this->tab4_EPS_b->TabIndex = 82;
+			this->tab4_EPS_b->Text = L"1e-8";
+			// 
+			// label40
+			// 
+			this->label40->AutoSize = true;
+			this->label40->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label40->Location = System::Drawing::Point(899, 460);
+			this->label40->Name = L"label40";
+			this->label40->Size = System::Drawing::Size(19, 20);
+			this->label40->TabIndex = 81;
+			this->label40->Text = L"b";
+			// 
+			// tab4_b
+			// 
+			this->tab4_b->Location = System::Drawing::Point(944, 460);
+			this->tab4_b->Name = L"tab4_b";
+			this->tab4_b->Size = System::Drawing::Size(110, 20);
+			this->tab4_b->TabIndex = 80;
+			this->tab4_b->Text = L"1.0";
+			// 
+			// label41
+			// 
+			this->label41->AutoSize = true;
+			this->label41->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label41->Location = System::Drawing::Point(899, 424);
+			this->label41->Name = L"label41";
+			this->label41->Size = System::Drawing::Size(19, 20);
+			this->label41->TabIndex = 79;
+			this->label41->Text = L"a";
+			// 
+			// tab4_a
+			// 
+			this->tab4_a->Location = System::Drawing::Point(944, 424);
+			this->tab4_a->Name = L"tab4_a";
+			this->tab4_a->Size = System::Drawing::Size(110, 20);
+			this->tab4_a->TabIndex = 78;
+			this->tab4_a->Text = L"0.0";
+			// 
+			// tab4_richTextBox1
+			// 
+			this->tab4_richTextBox1->Location = System::Drawing::Point(876, 130);
+			this->tab4_richTextBox1->Name = L"tab4_richTextBox1";
+			this->tab4_richTextBox1->Size = System::Drawing::Size(374, 263);
+			this->tab4_richTextBox1->TabIndex = 77;
+			this->tab4_richTextBox1->Text = L"";
+			// 
+			// tab4_button1
+			// 
+			this->tab4_button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->tab4_button1->Location = System::Drawing::Point(1059, 580);
+			this->tab4_button1->Name = L"tab4_button1";
+			this->tab4_button1->Size = System::Drawing::Size(191, 62);
+			this->tab4_button1->TabIndex = 76;
+			this->tab4_button1->Text = L"Произвести вычисления";
+			this->tab4_button1->UseVisualStyleBackColor = true;
+			this->tab4_button1->Click += gcnew System::EventHandler(this, &Window::tab4_button1_Click);
+			// 
+			// label42
+			// 
+			this->label42->AutoSize = true;
+			this->label42->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label42->Location = System::Drawing::Point(1153, 64);
+			this->label42->Name = L"label42";
+			this->label42->Size = System::Drawing::Size(87, 20);
+			this->label42->TabIndex = 75;
+			this->label42->Text = L", x ∈ [a, b]";
+			// 
+			// label43
+			// 
+			this->label43->AutoSize = true;
+			this->label43->BackColor = System::Drawing::Color::White;
+			this->label43->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 44.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label43->Location = System::Drawing::Point(880, 34);
+			this->label43->Name = L"label43";
+			this->label43->Size = System::Drawing::Size(49, 67);
+			this->label43->TabIndex = 74;
+			this->label43->Text = L"{";
+			// 
+			// label44
+			// 
+			this->label44->AutoSize = true;
+			this->label44->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label44->Location = System::Drawing::Point(935, 64);
+			this->label44->Name = L"label44";
+			this->label44->Size = System::Drawing::Size(81, 20);
+			this->label44->TabIndex = 73;
+			this->label44->Text = L"u(a) = u0";
+			// 
+			// label45
+			// 
+			this->label45->AutoSize = true;
+			this->label45->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label45->Location = System::Drawing::Point(935, 44);
+			this->label45->Name = L"label45";
+			this->label45->Size = System::Drawing::Size(212, 20);
+			this->label45->TabIndex = 72;
+			this->label45->Text = L"mu\'\'+ cu\' + ku + k*u^3 = 0";
+			// 
+			// tab4_dataGridView1
+			// 
+			this->tab4_dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->tab4_dataGridView1->Location = System::Drawing::Point(6, 405);
+			this->tab4_dataGridView1->Name = L"tab4_dataGridView1";
+			this->tab4_dataGridView1->Size = System::Drawing::Size(866, 237);
+			this->tab4_dataGridView1->TabIndex = 71;
+			// 
+			// tab4_chart1
+			// 
+			chartArea6->Name = L"ChartArea1";
+			this->tab4_chart1->ChartAreas->Add(chartArea6);
+			this->tab4_chart1->Cursor = System::Windows::Forms::Cursors::Default;
+			legend6->Name = L"Legend1";
+			this->tab4_chart1->Legends->Add(legend6);
+			this->tab4_chart1->Location = System::Drawing::Point(6, 6);
+			this->tab4_chart1->Name = L"tab4_chart1";
+			series6->ChartArea = L"ChartArea1";
+			series6->Legend = L"Legend1";
+			series6->Name = L" График не построен";
+			this->tab4_chart1->Series->Add(series6);
+			this->tab4_chart1->Size = System::Drawing::Size(427, 393);
+			this->tab4_chart1->TabIndex = 70;
+			this->tab4_chart1->Text = L"chart1";
+			// 
+			// label46
+			// 
+			this->label46->AutoSize = true;
+			this->label46->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label46->Location = System::Drawing::Point(1078, 536);
+			this->label46->Name = L"label46";
+			this->label46->Size = System::Drawing::Size(44, 20);
+			this->label46->TabIndex = 95;
+			this->label46->Text = L"EPS";
+			// 
+			// tab4_EPS
+			// 
+			this->tab4_EPS->Location = System::Drawing::Point(1137, 536);
+			this->tab4_EPS->Name = L"tab4_EPS";
+			this->tab4_EPS->Size = System::Drawing::Size(110, 20);
+			this->tab4_EPS->TabIndex = 94;
+			this->tab4_EPS->Text = L"1e-6";
 			// 
 			// Window
 			// 
@@ -1119,6 +1477,11 @@ private: System::Windows::Forms::Label^ label33;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab3_chart2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab3_dataGridView1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab3_chart1))->EndInit();
+			this->tabPage4->ResumeLayout(false);
+			this->tabPage4->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab4_chart2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab4_dataGridView1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab4_chart1))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -1711,8 +2074,8 @@ private: System::Void tab3_button1_Click(System::Object^ sender, System::EventAr
 	if (dgv->Columns->Count == 0) {
 		dgv->Columns->Add("i", "i");
 		dgv->Columns->Add("xi", "xi");
-		dgv->Columns->Add("ui", "u(xi)");
-		dgv->Columns->Add("dui", "u'(xi)");
+		dgv->Columns->Add("ui", "v(xi)");
+		dgv->Columns->Add("dui", "v'(xi)");
 		dgv->Columns->Add("hi", "hi");
 	}
 
@@ -1793,7 +2156,7 @@ private: System::Void tab3_button1_Click(System::Object^ sender, System::EventAr
 		area->CursorY->LineColor = System::Drawing::Color::Transparent;
 
 		Series^ sLine = gcnew Series();
-		sLine->Name = "u(x)";
+		sLine->Name = "v(x)";
 		sLine->ChartType = SeriesChartType::Line;
 		sLine->BorderWidth = 2;
 
@@ -1812,7 +2175,7 @@ private: System::Void tab3_button1_Click(System::Object^ sender, System::EventAr
 		}
 	}
 
-	// Chart2: фазовый портрет u' vs u
+	// Chart2: фазовый портрет v' vs v
 	chart2->Series->Clear();
 	chart2->MouseWheel += gcnew MouseEventHandler(this, &Window::chart_MouseWheel);
 	{
@@ -1821,13 +2184,267 @@ private: System::Void tab3_button1_Click(System::Object^ sender, System::EventAr
 		area->CursorY->LineColor = System::Drawing::Color::Transparent;
 
 		Series^ s = gcnew Series();
-		s->Name = "u' vs u";
+		s->Name = "v' vs v";
 		s->ChartType = SeriesChartType::Line;
 		s->BorderWidth = 2;
 		chart2->Series->Add(s);
 
 		for (size_t j = 0; j < xs.size(); ++j)
-			s->Points->AddXY(us[j], dus[j]); // ось X = u, ось Y = u'
+			s->Points->AddXY(us[j], dus[j]);
+	}
+}
+
+private: System::Void tab4_button1_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	TextBox^ tb_a = this->tab4_a;
+	TextBox^ tb_b = this->tab4_b;
+	TextBox^ tb_EPS_b = this->tab4_EPS_b;
+	TextBox^ tb_h0 = this->tab4_h;
+	TextBox^ tb_EPS = this->tab4_EPS;
+	TextBox^ tb_u0 = this->tab4_u0;
+	TextBox^ tb_du0 = this->tab4_u_0;
+	TextBox^ tb_Nmax = this->tab4_Nmax;
+
+	DataGridView^ dgv = this->tab4_dataGridView1;
+	auto chart1 = this->tab4_chart1;
+	auto chart2 = this->tab4_chart2;
+
+	double a, b, EPS_b, h, EPS, u0, du0;
+	int Nmax;
+
+	// --- Парсинг ---
+	if (!Double::TryParse(tb_a->Text, System::Globalization::NumberStyles::Float,
+		System::Globalization::CultureInfo::InvariantCulture, a)) {
+		MessageBox::Show("Некорректное значение a", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error); return;
+	}
+	if (!Double::TryParse(tb_b->Text, System::Globalization::NumberStyles::Float,
+		System::Globalization::CultureInfo::InvariantCulture, b)) {
+		MessageBox::Show("Некорректное значение b", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error); return;
+	}
+	if (!Double::TryParse(tb_EPS_b->Text, System::Globalization::NumberStyles::Float,
+		System::Globalization::CultureInfo::InvariantCulture, EPS_b)) {
+		MessageBox::Show("Некорректное значение EPS_b", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error); return;
+	}
+	if (!Double::TryParse(tb_h0->Text, System::Globalization::NumberStyles::Float,
+		System::Globalization::CultureInfo::InvariantCulture, h)) {
+		MessageBox::Show("Некорректное значение h0", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error); return;
+	}
+	if (!Double::TryParse(tb_EPS->Text, System::Globalization::NumberStyles::Float,
+		System::Globalization::CultureInfo::InvariantCulture, EPS)) {
+		MessageBox::Show("Некорректное значение EPS", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error); return;
+	}
+	if (!Int32::TryParse(tb_Nmax->Text, System::Globalization::NumberStyles::Integer,
+		System::Globalization::CultureInfo::InvariantCulture, Nmax)) {
+		MessageBox::Show("Некорректное значение Nmax", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error); return;
+	}
+	if (!Double::TryParse(tb_u0->Text, System::Globalization::NumberStyles::Float,
+		System::Globalization::CultureInfo::InvariantCulture, u0)) {
+		MessageBox::Show("Некорректное значение u0", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error); return;
+	}
+	if (!Double::TryParse(tb_du0->Text, System::Globalization::NumberStyles::Float,
+		System::Globalization::CultureInfo::InvariantCulture, du0)) {
+		MessageBox::Show("Некорректное значение u'0", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error); return;
+	}
+
+	// --- Проверки ---
+	if (a > b) {
+		MessageBox::Show("a должно быть <= b", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error); return;
+	}
+	if (EPS_b <= 0.0 || EPS_b >= b - a) {
+		MessageBox::Show("Некорректное значение EPS_b", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error); return;
+	}
+	if (h <= 0.0) {
+		MessageBox::Show("h0 должно быть > 0", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error); return;
+	}
+	if (EPS <= 0.0) {
+		MessageBox::Show("EPS должно быть > 0", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error); return;
+	}
+	if (Nmax <= 0) {
+		MessageBox::Show("Nmax должно быть > 0", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error); return;
+	}
+
+	// --- Правая часть системы (те же f2, f3 что в tab3) ---
+	vf F(2);
+	F[0] = f2;
+	F[1] = f3;
+
+	// --- Настройка таблицы ---
+	dgv->Rows->Clear();
+	dgv->Columns->Clear();
+
+	dgv->Columns->Add("i", "i");
+	dgv->Columns->Add("xi", "xi");
+	dgv->Columns->Add("vi0", "v(xi)");
+	dgv->Columns->Add("v2i0", "v2(xi)");
+	dgv->Columns->Add("diff0", "v-v2");
+	dgv->Columns->Add("olp", "ОЛП");
+	dgv->Columns->Add("hi", "hi");
+	dgv->Columns->Add("C1", "C1");
+	dgv->Columns->Add("C2", "C2");
+
+	// --- Начальные условия ---
+	double x = a;
+	vd v = { u0, du0 };
+	int i = 0;
+
+	std::vector<double> xs, us, dus;
+
+	dgv->Rows->Add(
+		"0",
+		x.ToString("F10"),
+		v[0].ToString("F10"),
+		v[1].ToString("F10"),
+		"-", "-", "-", "0", "0"
+	);
+	xs.push_back(x);
+	us.push_back(v[0]);
+	dus.push_back(v[1]);
+
+	int C1 = 0, C2 = 0, cnt_iter = 0;
+
+	double max_olp = 0.0;
+	double max_hi = h, min_hi = h;
+	double max_hi_x = x, min_hi_x = x;
+	int total_C1 = 0, total_C2 = 0;
+
+	// --- Основной цикл ---
+	while (x < b - EPS_b && i < Nmax) {
+
+		C1 = 0;
+		C2 = 0;
+
+		vd v2;
+
+		auto next = RK4(
+			std::make_pair(x, v),
+			F,
+			h,
+			b,
+			EPS_b,
+			EPS,
+			C1,
+			C2,
+			cnt_iter,
+			Nmax,
+			v2
+		);
+
+		double new_x = next.first;
+		vd     new_v = next.second;
+		double hi = new_x - x;
+
+		if (hi <= 0.0) break;
+
+		i++;
+
+		// ОЛП = max по компонентам |v - v2| / 15
+		double diff0 = new_v[0] - v2[0];
+		double diff1 = new_v[1] - v2[1];
+		double olp = std::max(std::abs(diff0), std::abs(diff1)) / 15.0;
+
+		x = new_x;
+		v = new_v;
+
+		if (olp > max_olp)        max_olp = olp;
+		if (hi > max_hi) { max_hi = hi;  max_hi_x = x; }
+		if (hi < min_hi) { min_hi = hi;  min_hi_x = x; }
+		total_C1 += C1;
+		total_C2 += C2;
+
+		dgv->Rows->Add(
+			i.ToString(),
+			x.ToString("F10"),
+			v[0].ToString("F10"),
+			v2[0].ToString("F10"),
+			diff0.ToString("F10"),
+			olp.ToString("F10"),
+			hi.ToString("F10"),
+			C1.ToString(),
+			C2.ToString()
+		);
+
+		xs.push_back(x);
+		us.push_back(v[0]);
+		dus.push_back(v[1]);
+	}
+
+	// --- Отчёт ---
+	String^ report;
+	if (x >= b - EPS_b) {
+		report = String::Format(
+			"Достигнута правая граница b = {0:F10} на шаге {1} с точностью до EPS_b",
+			b, i);
+	}
+	else {
+		report = String::Format(
+			"Достигнут предел итераций Nmax = {0}, x = {1:F10}",
+			Nmax, x);
+	}
+
+	report += String::Format(
+		"\n\nn = {0},  b - xn = {1:F10}"
+		"\nmax |ОЛП| = {2:F10}"
+		"\nОбщее число делений шага  (C1) = {3}"
+		"\nОбщее число удвоений шага (C2) = {4}"
+		"\nmax hi = {5:F10} при x = {6:F10}"
+		"\nmin hi = {7:F10} при x = {8:F10}",
+		i, (b - x),
+		max_olp,
+		total_C1, total_C2,
+		max_hi, max_hi_x,
+		min_hi, min_hi_x
+	);
+
+	tab4_richTextBox1->Clear();
+	tab4_richTextBox1->AppendText(report);
+
+	// --- Графики ---
+	using namespace System::Windows::Forms::DataVisualization::Charting;
+
+	// Chart1: v(x) с узлами
+	chart1->Series->Clear();
+	chart1->MouseWheel += gcnew MouseEventHandler(this, &Window::chart_MouseWheel);
+	{
+		auto area = chart1->ChartAreas[0];
+		area->CursorX->LineColor = System::Drawing::Color::Transparent;
+		area->CursorY->LineColor = System::Drawing::Color::Transparent;
+
+		Series^ sLine = gcnew Series();
+		sLine->Name = "v(x)";
+		sLine->ChartType = SeriesChartType::Line;
+		sLine->BorderWidth = 2;
+
+		Series^ sPoints = gcnew Series();
+		sPoints->Name = "Узлы";
+		sPoints->ChartType = SeriesChartType::Point;
+		sPoints->MarkerSize = 8;
+		sPoints->MarkerStyle = MarkerStyle::Circle;
+
+		chart1->Series->Add(sLine);
+		chart1->Series->Add(sPoints);
+
+		for (size_t j = 0; j < xs.size(); ++j) {
+			sLine->Points->AddXY(xs[j], us[j]);
+			sPoints->Points->AddXY(xs[j], us[j]);
+		}
+	}
+
+	// Chart2: фазовый портрет v' vs v
+	chart2->Series->Clear();
+	chart2->MouseWheel += gcnew MouseEventHandler(this, &Window::chart_MouseWheel);
+	{
+		auto area = chart2->ChartAreas[0];
+		area->CursorX->LineColor = System::Drawing::Color::Transparent;
+		area->CursorY->LineColor = System::Drawing::Color::Transparent;
+
+		Series^ s = gcnew Series();
+		s->Name = "v' vs v";
+		s->ChartType = SeriesChartType::Line;
+		s->BorderWidth = 2;
+		chart2->Series->Add(s);
+
+		for (size_t j = 0; j < xs.size(); ++j)
+			s->Points->AddXY(us[j], dus[j]);
 	}
 }
 };
