@@ -169,6 +169,9 @@ private: System::Windows::Forms::Label^ label44;
 private: System::Windows::Forms::Label^ label45;
 private: System::Windows::Forms::DataGridView^ tab4_dataGridView1;
 private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1;
+private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab3_chart3;
+private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart3;
+
 
 
 
@@ -228,6 +231,12 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea6 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
 			System::Windows::Forms::DataVisualization::Charting::Legend^ legend6 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
 			System::Windows::Forms::DataVisualization::Charting::Series^ series6 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea7 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^ legend7 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^ series7 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea8 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^ legend8 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^ series8 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Window::typeid));
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
@@ -275,6 +284,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->tab2_dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->tab2_chart1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->tab3_chart3 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
 			this->label22 = (gcnew System::Windows::Forms::Label());
 			this->tab3_u_0 = (gcnew System::Windows::Forms::TextBox());
 			this->label33 = (gcnew System::Windows::Forms::Label());
@@ -300,6 +310,9 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->tab3_dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->tab3_chart1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
 			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
+			this->tab4_chart3 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
+			this->label46 = (gcnew System::Windows::Forms::Label());
+			this->tab4_EPS = (gcnew System::Windows::Forms::TextBox());
 			this->label34 = (gcnew System::Windows::Forms::Label());
 			this->tab4_u_0 = (gcnew System::Windows::Forms::TextBox());
 			this->label35 = (gcnew System::Windows::Forms::Label());
@@ -324,8 +337,6 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label45 = (gcnew System::Windows::Forms::Label());
 			this->tab4_dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->tab4_chart1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
-			this->label46 = (gcnew System::Windows::Forms::Label());
-			this->tab4_EPS = (gcnew System::Windows::Forms::TextBox());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab1_dataGridView))->BeginInit();
@@ -334,10 +345,12 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab2_dataGridView1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab2_chart1))->BeginInit();
 			this->tabPage3->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab3_chart3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab3_chart2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab3_dataGridView1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab3_chart1))->BeginInit();
 			this->tabPage4->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab4_chart3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab4_chart2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab4_dataGridView1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab4_chart1))->BeginInit();
@@ -354,7 +367,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->tabControl1->Location = System::Drawing::Point(0, 0);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
-			this->tabControl1->Size = System::Drawing::Size(1264, 681);
+			this->tabControl1->Size = System::Drawing::Size(1584, 861);
 			this->tabControl1->TabIndex = 0;
 			// 
 			// tabPage1
@@ -386,7 +399,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->tabPage1->Location = System::Drawing::Point(4, 29);
 			this->tabPage1->Name = L"tabPage1";
 			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage1->Size = System::Drawing::Size(1256, 648);
+			this->tabPage1->Size = System::Drawing::Size(1576, 828);
 			this->tabPage1->TabIndex = 0;
 			this->tabPage1->Text = L"Тестовая задача (постоянный шаг)";
 			// 
@@ -395,7 +408,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label10->AutoSize = true;
 			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label10->Location = System::Drawing::Point(1033, 486);
+			this->label10->Location = System::Drawing::Point(1373, 664);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(53, 20);
 			this->label10->TabIndex = 21;
@@ -405,7 +418,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			this->tab1_Nmax->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->tab1_Nmax->Location = System::Drawing::Point(1092, 486);
+			this->tab1_Nmax->Location = System::Drawing::Point(1432, 664);
 			this->tab1_Nmax->Name = L"tab1_Nmax";
 			this->tab1_Nmax->Size = System::Drawing::Size(110, 20);
 			this->tab1_Nmax->TabIndex = 20;
@@ -416,7 +429,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label9->AutoSize = true;
 			this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label9->Location = System::Drawing::Point(1043, 428);
+			this->label9->Location = System::Drawing::Point(1383, 606);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(29, 20);
 			this->label9->TabIndex = 19;
@@ -426,7 +439,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			this->tab1_u0->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->tab1_u0->Location = System::Drawing::Point(1092, 430);
+			this->tab1_u0->Location = System::Drawing::Point(1432, 608);
 			this->tab1_u0->Name = L"tab1_u0";
 			this->tab1_u0->Size = System::Drawing::Size(110, 20);
 			this->tab1_u0->TabIndex = 18;
@@ -437,7 +450,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label8->AutoSize = true;
 			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label8->Location = System::Drawing::Point(810, 542);
+			this->label8->Location = System::Drawing::Point(1150, 720);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(64, 20);
 			this->label8->TabIndex = 17;
@@ -447,7 +460,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			this->tab1_h->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->tab1_h->Location = System::Drawing::Point(876, 603);
+			this->tab1_h->Location = System::Drawing::Point(1216, 781);
 			this->tab1_h->Name = L"tab1_h";
 			this->tab1_h->Size = System::Drawing::Size(110, 20);
 			this->tab1_h->TabIndex = 16;
@@ -458,7 +471,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label7->AutoSize = true;
 			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label7->Location = System::Drawing::Point(831, 603);
+			this->label7->Location = System::Drawing::Point(1171, 781);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(19, 20);
 			this->label7->TabIndex = 15;
@@ -468,7 +481,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			this->tab1_EPS_b->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->tab1_EPS_b->Location = System::Drawing::Point(876, 542);
+			this->tab1_EPS_b->Location = System::Drawing::Point(1216, 720);
 			this->tab1_EPS_b->Name = L"tab1_EPS_b";
 			this->tab1_EPS_b->Size = System::Drawing::Size(110, 20);
 			this->tab1_EPS_b->TabIndex = 14;
@@ -479,7 +492,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label6->AutoSize = true;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label6->Location = System::Drawing::Point(831, 486);
+			this->label6->Location = System::Drawing::Point(1171, 664);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(19, 20);
 			this->label6->TabIndex = 13;
@@ -489,7 +502,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			this->tab1_b->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->tab1_b->Location = System::Drawing::Point(876, 486);
+			this->tab1_b->Location = System::Drawing::Point(1216, 664);
 			this->tab1_b->Name = L"tab1_b";
 			this->tab1_b->Size = System::Drawing::Size(110, 20);
 			this->tab1_b->TabIndex = 12;
@@ -500,7 +513,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label5->AutoSize = true;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label5->Location = System::Drawing::Point(831, 430);
+			this->label5->Location = System::Drawing::Point(1171, 608);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(19, 20);
 			this->label5->TabIndex = 11;
@@ -510,7 +523,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			this->tab1_a->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->tab1_a->Location = System::Drawing::Point(876, 430);
+			this->tab1_a->Location = System::Drawing::Point(1216, 608);
 			this->tab1_a->Name = L"tab1_a";
 			this->tab1_a->Size = System::Drawing::Size(110, 20);
 			this->tab1_a->TabIndex = 10;
@@ -520,9 +533,9 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			this->tab1_richTextBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
-			this->tab1_richTextBox1->Location = System::Drawing::Point(814, 136);
+			this->tab1_richTextBox1->Location = System::Drawing::Point(1146, 152);
 			this->tab1_richTextBox1->Name = L"tab1_richTextBox1";
-			this->tab1_richTextBox1->Size = System::Drawing::Size(436, 263);
+			this->tab1_richTextBox1->Size = System::Drawing::Size(424, 433);
 			this->tab1_richTextBox1->TabIndex = 8;
 			this->tab1_richTextBox1->Text = L"";
 			// 
@@ -530,7 +543,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			this->tab1_button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->tab1_button1->Location = System::Drawing::Point(1059, 580);
+			this->tab1_button1->Location = System::Drawing::Point(1377, 758);
 			this->tab1_button1->Name = L"tab1_button1";
 			this->tab1_button1->Size = System::Drawing::Size(191, 62);
 			this->tab1_button1->TabIndex = 7;
@@ -543,7 +556,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label4->Location = System::Drawing::Point(1098, 64);
+			this->label4->Location = System::Drawing::Point(1408, 70);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(87, 20);
 			this->label4->TabIndex = 6;
@@ -555,7 +568,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label3->BackColor = System::Drawing::Color::White;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 44.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label3->Location = System::Drawing::Point(904, 35);
+			this->label3->Location = System::Drawing::Point(1214, 41);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(49, 67);
 			this->label3->TabIndex = 5;
@@ -566,7 +579,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label2->Location = System::Drawing::Point(959, 81);
+			this->label2->Location = System::Drawing::Point(1269, 87);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(81, 20);
 			this->label2->TabIndex = 4;
@@ -577,7 +590,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label1->Location = System::Drawing::Point(959, 48);
+			this->label1->Location = System::Drawing::Point(1269, 54);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(143, 20);
 			this->label1->TabIndex = 3;
@@ -588,7 +601,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->tab1_dataGridView->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->tab1_dataGridView->Location = System::Drawing::Point(6, 405);
 			this->tab1_dataGridView->Name = L"tab1_dataGridView";
-			this->tab1_dataGridView->Size = System::Drawing::Size(802, 237);
+			this->tab1_dataGridView->Size = System::Drawing::Size(1138, 420);
 			this->tab1_dataGridView->TabIndex = 2;
 			// 
 			// tab1_chart1
@@ -604,7 +617,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			series1->Legend = L"Legend1";
 			series1->Name = L" График не построен";
 			this->tab1_chart1->Series->Add(series1);
-			this->tab1_chart1->Size = System::Drawing::Size(802, 393);
+			this->tab1_chart1->Size = System::Drawing::Size(1134, 393);
 			this->tab1_chart1->TabIndex = 0;
 			this->tab1_chart1->Text = L"chart1";
 			// 
@@ -635,7 +648,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->tabPage2->Location = System::Drawing::Point(4, 29);
 			this->tabPage2->Name = L"tabPage2";
 			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage2->Size = System::Drawing::Size(1256, 648);
+			this->tabPage2->Size = System::Drawing::Size(1576, 828);
 			this->tabPage2->TabIndex = 1;
 			this->tabPage2->Text = L"Тестовая задача (адаптивный шаг)";
 			this->tabPage2->UseVisualStyleBackColor = true;
@@ -645,7 +658,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label21->AutoSize = true;
 			this->label21->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label21->Location = System::Drawing::Point(1033, 542);
+			this->label21->Location = System::Drawing::Point(1351, 720);
 			this->label21->Name = L"label21";
 			this->label21->Size = System::Drawing::Size(44, 20);
 			this->label21->TabIndex = 43;
@@ -653,7 +666,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab2_EPS
 			// 
-			this->tab2_EPS->Location = System::Drawing::Point(1092, 542);
+			this->tab2_EPS->Location = System::Drawing::Point(1410, 720);
 			this->tab2_EPS->Name = L"tab2_EPS";
 			this->tab2_EPS->Size = System::Drawing::Size(110, 20);
 			this->tab2_EPS->TabIndex = 42;
@@ -664,7 +677,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label11->AutoSize = true;
 			this->label11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label11->Location = System::Drawing::Point(1033, 486);
+			this->label11->Location = System::Drawing::Point(1351, 664);
 			this->label11->Name = L"label11";
 			this->label11->Size = System::Drawing::Size(53, 20);
 			this->label11->TabIndex = 41;
@@ -672,7 +685,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab2_Nmax
 			// 
-			this->tab2_Nmax->Location = System::Drawing::Point(1092, 486);
+			this->tab2_Nmax->Location = System::Drawing::Point(1410, 664);
 			this->tab2_Nmax->Name = L"tab2_Nmax";
 			this->tab2_Nmax->Size = System::Drawing::Size(110, 20);
 			this->tab2_Nmax->TabIndex = 40;
@@ -683,7 +696,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label12->AutoSize = true;
 			this->label12->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label12->Location = System::Drawing::Point(1043, 428);
+			this->label12->Location = System::Drawing::Point(1361, 606);
 			this->label12->Name = L"label12";
 			this->label12->Size = System::Drawing::Size(29, 20);
 			this->label12->TabIndex = 39;
@@ -691,7 +704,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab2_u0
 			// 
-			this->tab2_u0->Location = System::Drawing::Point(1092, 430);
+			this->tab2_u0->Location = System::Drawing::Point(1410, 608);
 			this->tab2_u0->Name = L"tab2_u0";
 			this->tab2_u0->Size = System::Drawing::Size(110, 20);
 			this->tab2_u0->TabIndex = 38;
@@ -702,7 +715,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label13->AutoSize = true;
 			this->label13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label13->Location = System::Drawing::Point(810, 542);
+			this->label13->Location = System::Drawing::Point(1128, 720);
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(64, 20);
 			this->label13->TabIndex = 37;
@@ -710,7 +723,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab2_h0
 			// 
-			this->tab2_h0->Location = System::Drawing::Point(876, 603);
+			this->tab2_h0->Location = System::Drawing::Point(1194, 781);
 			this->tab2_h0->Name = L"tab2_h0";
 			this->tab2_h0->Size = System::Drawing::Size(110, 20);
 			this->tab2_h0->TabIndex = 36;
@@ -721,7 +734,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label14->AutoSize = true;
 			this->label14->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label14->Location = System::Drawing::Point(821, 603);
+			this->label14->Location = System::Drawing::Point(1139, 781);
 			this->label14->Name = L"label14";
 			this->label14->Size = System::Drawing::Size(29, 20);
 			this->label14->TabIndex = 35;
@@ -729,7 +742,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab2_EPS_b
 			// 
-			this->tab2_EPS_b->Location = System::Drawing::Point(876, 542);
+			this->tab2_EPS_b->Location = System::Drawing::Point(1194, 720);
 			this->tab2_EPS_b->Name = L"tab2_EPS_b";
 			this->tab2_EPS_b->Size = System::Drawing::Size(110, 20);
 			this->tab2_EPS_b->TabIndex = 34;
@@ -740,7 +753,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label15->AutoSize = true;
 			this->label15->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label15->Location = System::Drawing::Point(831, 486);
+			this->label15->Location = System::Drawing::Point(1149, 664);
 			this->label15->Name = L"label15";
 			this->label15->Size = System::Drawing::Size(19, 20);
 			this->label15->TabIndex = 33;
@@ -748,7 +761,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab2_b
 			// 
-			this->tab2_b->Location = System::Drawing::Point(876, 486);
+			this->tab2_b->Location = System::Drawing::Point(1194, 664);
 			this->tab2_b->Name = L"tab2_b";
 			this->tab2_b->Size = System::Drawing::Size(110, 20);
 			this->tab2_b->TabIndex = 32;
@@ -759,7 +772,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label16->AutoSize = true;
 			this->label16->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label16->Location = System::Drawing::Point(831, 430);
+			this->label16->Location = System::Drawing::Point(1149, 608);
 			this->label16->Name = L"label16";
 			this->label16->Size = System::Drawing::Size(19, 20);
 			this->label16->TabIndex = 31;
@@ -767,7 +780,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab2_a
 			// 
-			this->tab2_a->Location = System::Drawing::Point(876, 430);
+			this->tab2_a->Location = System::Drawing::Point(1194, 608);
 			this->tab2_a->Name = L"tab2_a";
 			this->tab2_a->Size = System::Drawing::Size(110, 20);
 			this->tab2_a->TabIndex = 30;
@@ -775,9 +788,9 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab2_richTextBox1
 			// 
-			this->tab2_richTextBox1->Location = System::Drawing::Point(814, 136);
+			this->tab2_richTextBox1->Location = System::Drawing::Point(1132, 122);
 			this->tab2_richTextBox1->Name = L"tab2_richTextBox1";
-			this->tab2_richTextBox1->Size = System::Drawing::Size(436, 263);
+			this->tab2_richTextBox1->Size = System::Drawing::Size(436, 465);
 			this->tab2_richTextBox1->TabIndex = 29;
 			this->tab2_richTextBox1->Text = L"";
 			// 
@@ -785,7 +798,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			this->tab2_button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->tab2_button1->Location = System::Drawing::Point(1059, 580);
+			this->tab2_button1->Location = System::Drawing::Point(1377, 758);
 			this->tab2_button1->Name = L"tab2_button1";
 			this->tab2_button1->Size = System::Drawing::Size(191, 62);
 			this->tab2_button1->TabIndex = 28;
@@ -798,7 +811,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label17->AutoSize = true;
 			this->label17->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label17->Location = System::Drawing::Point(1098, 64);
+			this->label17->Location = System::Drawing::Point(1411, 44);
 			this->label17->Name = L"label17";
 			this->label17->Size = System::Drawing::Size(87, 20);
 			this->label17->TabIndex = 27;
@@ -810,7 +823,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label18->BackColor = System::Drawing::Color::White;
 			this->label18->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 44.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label18->Location = System::Drawing::Point(904, 35);
+			this->label18->Location = System::Drawing::Point(1217, 15);
 			this->label18->Name = L"label18";
 			this->label18->Size = System::Drawing::Size(49, 67);
 			this->label18->TabIndex = 26;
@@ -821,7 +834,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label19->AutoSize = true;
 			this->label19->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label19->Location = System::Drawing::Point(959, 81);
+			this->label19->Location = System::Drawing::Point(1272, 61);
 			this->label19->Name = L"label19";
 			this->label19->Size = System::Drawing::Size(81, 20);
 			this->label19->TabIndex = 25;
@@ -832,7 +845,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label20->AutoSize = true;
 			this->label20->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label20->Location = System::Drawing::Point(959, 48);
+			this->label20->Location = System::Drawing::Point(1272, 28);
 			this->label20->Name = L"label20";
 			this->label20->Size = System::Drawing::Size(143, 20);
 			this->label20->TabIndex = 24;
@@ -843,7 +856,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->tab2_dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->tab2_dataGridView1->Location = System::Drawing::Point(6, 405);
 			this->tab2_dataGridView1->Name = L"tab2_dataGridView1";
-			this->tab2_dataGridView1->Size = System::Drawing::Size(802, 237);
+			this->tab2_dataGridView1->Size = System::Drawing::Size(1116, 415);
 			this->tab2_dataGridView1->TabIndex = 23;
 			// 
 			// tab2_chart1
@@ -859,12 +872,13 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			series2->Legend = L"Legend1";
 			series2->Name = L" График не построен";
 			this->tab2_chart1->Series->Add(series2);
-			this->tab2_chart1->Size = System::Drawing::Size(802, 393);
+			this->tab2_chart1->Size = System::Drawing::Size(1116, 393);
 			this->tab2_chart1->TabIndex = 22;
 			this->tab2_chart1->Text = L"chart1";
 			// 
 			// tabPage3
 			// 
+			this->tabPage3->Controls->Add(this->tab3_chart3);
 			this->tabPage3->Controls->Add(this->label22);
 			this->tabPage3->Controls->Add(this->tab3_u_0);
 			this->tabPage3->Controls->Add(this->label33);
@@ -891,17 +905,34 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->tabPage3->Controls->Add(this->tab3_chart1);
 			this->tabPage3->Location = System::Drawing::Point(4, 29);
 			this->tabPage3->Name = L"tabPage3";
-			this->tabPage3->Size = System::Drawing::Size(1256, 648);
+			this->tabPage3->Size = System::Drawing::Size(1576, 828);
 			this->tabPage3->TabIndex = 2;
 			this->tabPage3->Text = L"Основная задача (постоянный шаг)";
 			this->tabPage3->UseVisualStyleBackColor = true;
+			// 
+			// tab3_chart3
+			// 
+			chartArea3->Name = L"ChartArea1";
+			this->tab3_chart3->ChartAreas->Add(chartArea3);
+			this->tab3_chart3->Cursor = System::Windows::Forms::Cursors::Default;
+			legend3->Name = L"Legend1";
+			this->tab3_chart3->Legends->Add(legend3);
+			this->tab3_chart3->Location = System::Drawing::Point(802, 6);
+			this->tab3_chart3->Name = L"tab3_chart3";
+			series3->ChartArea = L"ChartArea1";
+			series3->Legend = L"Legend1";
+			series3->Name = L" График не построен";
+			this->tab3_chart3->Series->Add(series3);
+			this->tab3_chart3->Size = System::Drawing::Size(391, 393);
+			this->tab3_chart3->TabIndex = 70;
+			this->tab3_chart3->Text = L"chart2";
 			// 
 			// label22
 			// 
 			this->label22->AutoSize = true;
 			this->label22->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label22->Location = System::Drawing::Point(1088, 460);
+			this->label22->Location = System::Drawing::Point(1406, 638);
 			this->label22->Name = L"label22";
 			this->label22->Size = System::Drawing::Size(33, 20);
 			this->label22->TabIndex = 69;
@@ -909,18 +940,18 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab3_u_0
 			// 
-			this->tab3_u_0->Location = System::Drawing::Point(1137, 462);
+			this->tab3_u_0->Location = System::Drawing::Point(1455, 640);
 			this->tab3_u_0->Name = L"tab3_u_0";
 			this->tab3_u_0->Size = System::Drawing::Size(110, 20);
 			this->tab3_u_0->TabIndex = 68;
-			this->tab3_u_0->Text = L"2.0";
+			this->tab3_u_0->Text = L"0";
 			// 
 			// label33
 			// 
 			this->label33->AutoSize = true;
 			this->label33->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label33->Location = System::Drawing::Point(935, 84);
+			this->label33->Location = System::Drawing::Point(1264, 94);
 			this->label33->Name = L"label33";
 			this->label33->Size = System::Drawing::Size(89, 20);
 			this->label33->TabIndex = 67;
@@ -928,18 +959,18 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab3_chart2
 			// 
-			chartArea3->Name = L"ChartArea1";
-			this->tab3_chart2->ChartAreas->Add(chartArea3);
+			chartArea4->Name = L"ChartArea1";
+			this->tab3_chart2->ChartAreas->Add(chartArea4);
 			this->tab3_chart2->Cursor = System::Windows::Forms::Cursors::Default;
-			legend3->Name = L"Legend1";
-			this->tab3_chart2->Legends->Add(legend3);
-			this->tab3_chart2->Location = System::Drawing::Point(439, 6);
+			legend4->Name = L"Legend1";
+			this->tab3_chart2->Legends->Add(legend4);
+			this->tab3_chart2->Location = System::Drawing::Point(414, 6);
 			this->tab3_chart2->Name = L"tab3_chart2";
-			series3->ChartArea = L"ChartArea1";
-			series3->Legend = L"Legend1";
-			series3->Name = L" График не построен";
-			this->tab3_chart2->Series->Add(series3);
-			this->tab3_chart2->Size = System::Drawing::Size(431, 393);
+			series4->ChartArea = L"ChartArea1";
+			series4->Legend = L"Legend1";
+			series4->Name = L" График не построен";
+			this->tab3_chart2->Series->Add(series4);
+			this->tab3_chart2->Size = System::Drawing::Size(382, 393);
 			this->tab3_chart2->TabIndex = 66;
 			this->tab3_chart2->Text = L"chart2";
 			// 
@@ -948,7 +979,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label23->AutoSize = true;
 			this->label23->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label23->Location = System::Drawing::Point(1078, 499);
+			this->label23->Location = System::Drawing::Point(1396, 677);
 			this->label23->Name = L"label23";
 			this->label23->Size = System::Drawing::Size(53, 20);
 			this->label23->TabIndex = 63;
@@ -956,7 +987,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab3_Nmax
 			// 
-			this->tab3_Nmax->Location = System::Drawing::Point(1137, 499);
+			this->tab3_Nmax->Location = System::Drawing::Point(1455, 677);
 			this->tab3_Nmax->Name = L"tab3_Nmax";
 			this->tab3_Nmax->Size = System::Drawing::Size(110, 20);
 			this->tab3_Nmax->TabIndex = 62;
@@ -967,7 +998,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label24->AutoSize = true;
 			this->label24->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label24->Location = System::Drawing::Point(1088, 422);
+			this->label24->Location = System::Drawing::Point(1406, 600);
 			this->label24->Name = L"label24";
 			this->label24->Size = System::Drawing::Size(29, 20);
 			this->label24->TabIndex = 61;
@@ -975,18 +1006,18 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab3_u0
 			// 
-			this->tab3_u0->Location = System::Drawing::Point(1137, 424);
+			this->tab3_u0->Location = System::Drawing::Point(1455, 602);
 			this->tab3_u0->Name = L"tab3_u0";
 			this->tab3_u0->Size = System::Drawing::Size(110, 20);
 			this->tab3_u0->TabIndex = 60;
-			this->tab3_u0->Text = L"2.0";
+			this->tab3_u0->Text = L"10";
 			// 
 			// label25
 			// 
 			this->label25->AutoSize = true;
 			this->label25->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label25->Location = System::Drawing::Point(878, 499);
+			this->label25->Location = System::Drawing::Point(1196, 677);
 			this->label25->Name = L"label25";
 			this->label25->Size = System::Drawing::Size(64, 20);
 			this->label25->TabIndex = 59;
@@ -994,7 +1025,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab3_h
 			// 
-			this->tab3_h->Location = System::Drawing::Point(944, 538);
+			this->tab3_h->Location = System::Drawing::Point(1262, 716);
 			this->tab3_h->Name = L"tab3_h";
 			this->tab3_h->Size = System::Drawing::Size(110, 20);
 			this->tab3_h->TabIndex = 58;
@@ -1005,7 +1036,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label26->AutoSize = true;
 			this->label26->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label26->Location = System::Drawing::Point(899, 536);
+			this->label26->Location = System::Drawing::Point(1217, 714);
 			this->label26->Name = L"label26";
 			this->label26->Size = System::Drawing::Size(19, 20);
 			this->label26->TabIndex = 57;
@@ -1013,7 +1044,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab3_EPS_b
 			// 
-			this->tab3_EPS_b->Location = System::Drawing::Point(944, 499);
+			this->tab3_EPS_b->Location = System::Drawing::Point(1262, 677);
 			this->tab3_EPS_b->Name = L"tab3_EPS_b";
 			this->tab3_EPS_b->Size = System::Drawing::Size(110, 20);
 			this->tab3_EPS_b->TabIndex = 56;
@@ -1024,7 +1055,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label27->AutoSize = true;
 			this->label27->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label27->Location = System::Drawing::Point(899, 460);
+			this->label27->Location = System::Drawing::Point(1217, 638);
 			this->label27->Name = L"label27";
 			this->label27->Size = System::Drawing::Size(19, 20);
 			this->label27->TabIndex = 55;
@@ -1032,7 +1063,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab3_b
 			// 
-			this->tab3_b->Location = System::Drawing::Point(944, 460);
+			this->tab3_b->Location = System::Drawing::Point(1262, 638);
 			this->tab3_b->Name = L"tab3_b";
 			this->tab3_b->Size = System::Drawing::Size(110, 20);
 			this->tab3_b->TabIndex = 54;
@@ -1043,7 +1074,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label28->AutoSize = true;
 			this->label28->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label28->Location = System::Drawing::Point(899, 424);
+			this->label28->Location = System::Drawing::Point(1217, 602);
 			this->label28->Name = L"label28";
 			this->label28->Size = System::Drawing::Size(19, 20);
 			this->label28->TabIndex = 53;
@@ -1051,7 +1082,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab3_a
 			// 
-			this->tab3_a->Location = System::Drawing::Point(944, 424);
+			this->tab3_a->Location = System::Drawing::Point(1262, 602);
 			this->tab3_a->Name = L"tab3_a";
 			this->tab3_a->Size = System::Drawing::Size(110, 20);
 			this->tab3_a->TabIndex = 52;
@@ -1059,9 +1090,9 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab3_richTextBox1
 			// 
-			this->tab3_richTextBox1->Location = System::Drawing::Point(876, 130);
+			this->tab3_richTextBox1->Location = System::Drawing::Point(1199, 148);
 			this->tab3_richTextBox1->Name = L"tab3_richTextBox1";
-			this->tab3_richTextBox1->Size = System::Drawing::Size(374, 263);
+			this->tab3_richTextBox1->Size = System::Drawing::Size(374, 433);
 			this->tab3_richTextBox1->TabIndex = 51;
 			this->tab3_richTextBox1->Text = L"";
 			// 
@@ -1069,7 +1100,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			this->tab3_button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->tab3_button1->Location = System::Drawing::Point(1059, 580);
+			this->tab3_button1->Location = System::Drawing::Point(1377, 758);
 			this->tab3_button1->Name = L"tab3_button1";
 			this->tab3_button1->Size = System::Drawing::Size(191, 62);
 			this->tab3_button1->TabIndex = 50;
@@ -1082,7 +1113,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label29->AutoSize = true;
 			this->label29->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label29->Location = System::Drawing::Point(1153, 64);
+			this->label29->Location = System::Drawing::Point(1482, 74);
 			this->label29->Name = L"label29";
 			this->label29->Size = System::Drawing::Size(87, 20);
 			this->label29->TabIndex = 49;
@@ -1094,7 +1125,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label30->BackColor = System::Drawing::Color::White;
 			this->label30->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 44.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label30->Location = System::Drawing::Point(880, 34);
+			this->label30->Location = System::Drawing::Point(1209, 44);
 			this->label30->Name = L"label30";
 			this->label30->Size = System::Drawing::Size(49, 67);
 			this->label30->TabIndex = 48;
@@ -1105,7 +1136,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label31->AutoSize = true;
 			this->label31->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label31->Location = System::Drawing::Point(935, 64);
+			this->label31->Location = System::Drawing::Point(1264, 74);
 			this->label31->Name = L"label31";
 			this->label31->Size = System::Drawing::Size(81, 20);
 			this->label31->TabIndex = 47;
@@ -1116,7 +1147,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label32->AutoSize = true;
 			this->label32->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label32->Location = System::Drawing::Point(935, 44);
+			this->label32->Location = System::Drawing::Point(1264, 54);
 			this->label32->Name = L"label32";
 			this->label32->Size = System::Drawing::Size(212, 20);
 			this->label32->TabIndex = 46;
@@ -1127,28 +1158,29 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->tab3_dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->tab3_dataGridView1->Location = System::Drawing::Point(6, 405);
 			this->tab3_dataGridView1->Name = L"tab3_dataGridView1";
-			this->tab3_dataGridView1->Size = System::Drawing::Size(866, 237);
+			this->tab3_dataGridView1->Size = System::Drawing::Size(1184, 420);
 			this->tab3_dataGridView1->TabIndex = 45;
 			// 
 			// tab3_chart1
 			// 
-			chartArea4->Name = L"ChartArea1";
-			this->tab3_chart1->ChartAreas->Add(chartArea4);
+			chartArea5->Name = L"ChartArea1";
+			this->tab3_chart1->ChartAreas->Add(chartArea5);
 			this->tab3_chart1->Cursor = System::Windows::Forms::Cursors::Default;
-			legend4->Name = L"Legend1";
-			this->tab3_chart1->Legends->Add(legend4);
+			legend5->Name = L"Legend1";
+			this->tab3_chart1->Legends->Add(legend5);
 			this->tab3_chart1->Location = System::Drawing::Point(6, 6);
 			this->tab3_chart1->Name = L"tab3_chart1";
-			series4->ChartArea = L"ChartArea1";
-			series4->Legend = L"Legend1";
-			series4->Name = L" График не построен";
-			this->tab3_chart1->Series->Add(series4);
-			this->tab3_chart1->Size = System::Drawing::Size(427, 393);
+			series5->ChartArea = L"ChartArea1";
+			series5->Legend = L"Legend1";
+			series5->Name = L" График не построен";
+			this->tab3_chart1->Series->Add(series5);
+			this->tab3_chart1->Size = System::Drawing::Size(402, 393);
 			this->tab3_chart1->TabIndex = 44;
 			this->tab3_chart1->Text = L"chart1";
 			// 
 			// tabPage4
 			// 
+			this->tabPage4->Controls->Add(this->tab4_chart3);
 			this->tabPage4->Controls->Add(this->label46);
 			this->tabPage4->Controls->Add(this->tab4_EPS);
 			this->tabPage4->Controls->Add(this->label34);
@@ -1177,17 +1209,53 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->tabPage4->Controls->Add(this->tab4_chart1);
 			this->tabPage4->Location = System::Drawing::Point(4, 29);
 			this->tabPage4->Name = L"tabPage4";
-			this->tabPage4->Size = System::Drawing::Size(1256, 648);
+			this->tabPage4->Size = System::Drawing::Size(1576, 828);
 			this->tabPage4->TabIndex = 3;
 			this->tabPage4->Text = L"Основная задача (адаптивный шаг)";
 			this->tabPage4->UseVisualStyleBackColor = true;
+			// 
+			// tab4_chart3
+			// 
+			chartArea6->Name = L"ChartArea1";
+			this->tab4_chart3->ChartAreas->Add(chartArea6);
+			this->tab4_chart3->Cursor = System::Windows::Forms::Cursors::Default;
+			legend6->Name = L"Legend1";
+			this->tab4_chart3->Legends->Add(legend6);
+			this->tab4_chart3->Location = System::Drawing::Point(805, 6);
+			this->tab4_chart3->Name = L"tab4_chart3";
+			series6->ChartArea = L"ChartArea1";
+			series6->Legend = L"Legend1";
+			series6->Name = L" График не построен";
+			this->tab4_chart3->Series->Add(series6);
+			this->tab4_chart3->Size = System::Drawing::Size(385, 393);
+			this->tab4_chart3->TabIndex = 96;
+			this->tab4_chart3->Text = L"chart2";
+			// 
+			// label46
+			// 
+			this->label46->AutoSize = true;
+			this->label46->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label46->Location = System::Drawing::Point(1396, 714);
+			this->label46->Name = L"label46";
+			this->label46->Size = System::Drawing::Size(44, 20);
+			this->label46->TabIndex = 95;
+			this->label46->Text = L"EPS";
+			// 
+			// tab4_EPS
+			// 
+			this->tab4_EPS->Location = System::Drawing::Point(1455, 714);
+			this->tab4_EPS->Name = L"tab4_EPS";
+			this->tab4_EPS->Size = System::Drawing::Size(110, 20);
+			this->tab4_EPS->TabIndex = 94;
+			this->tab4_EPS->Text = L"1e-6";
 			// 
 			// label34
 			// 
 			this->label34->AutoSize = true;
 			this->label34->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label34->Location = System::Drawing::Point(1088, 460);
+			this->label34->Location = System::Drawing::Point(1406, 638);
 			this->label34->Name = L"label34";
 			this->label34->Size = System::Drawing::Size(33, 20);
 			this->label34->TabIndex = 93;
@@ -1195,18 +1263,18 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab4_u_0
 			// 
-			this->tab4_u_0->Location = System::Drawing::Point(1137, 462);
+			this->tab4_u_0->Location = System::Drawing::Point(1455, 640);
 			this->tab4_u_0->Name = L"tab4_u_0";
 			this->tab4_u_0->Size = System::Drawing::Size(110, 20);
 			this->tab4_u_0->TabIndex = 92;
-			this->tab4_u_0->Text = L"2.0";
+			this->tab4_u_0->Text = L"0";
 			// 
 			// label35
 			// 
 			this->label35->AutoSize = true;
 			this->label35->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label35->Location = System::Drawing::Point(935, 84);
+			this->label35->Location = System::Drawing::Point(1264, 92);
 			this->label35->Name = L"label35";
 			this->label35->Size = System::Drawing::Size(89, 20);
 			this->label35->TabIndex = 91;
@@ -1214,18 +1282,18 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab4_chart2
 			// 
-			chartArea5->Name = L"ChartArea1";
-			this->tab4_chart2->ChartAreas->Add(chartArea5);
+			chartArea7->Name = L"ChartArea1";
+			this->tab4_chart2->ChartAreas->Add(chartArea7);
 			this->tab4_chart2->Cursor = System::Windows::Forms::Cursors::Default;
-			legend5->Name = L"Legend1";
-			this->tab4_chart2->Legends->Add(legend5);
-			this->tab4_chart2->Location = System::Drawing::Point(439, 6);
+			legend7->Name = L"Legend1";
+			this->tab4_chart2->Legends->Add(legend7);
+			this->tab4_chart2->Location = System::Drawing::Point(410, 6);
 			this->tab4_chart2->Name = L"tab4_chart2";
-			series5->ChartArea = L"ChartArea1";
-			series5->Legend = L"Legend1";
-			series5->Name = L" График не построен";
-			this->tab4_chart2->Series->Add(series5);
-			this->tab4_chart2->Size = System::Drawing::Size(431, 393);
+			series7->ChartArea = L"ChartArea1";
+			series7->Legend = L"Legend1";
+			series7->Name = L" График не построен";
+			this->tab4_chart2->Series->Add(series7);
+			this->tab4_chart2->Size = System::Drawing::Size(389, 393);
 			this->tab4_chart2->TabIndex = 90;
 			this->tab4_chart2->Text = L"chart2";
 			// 
@@ -1234,7 +1302,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label36->AutoSize = true;
 			this->label36->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label36->Location = System::Drawing::Point(1078, 499);
+			this->label36->Location = System::Drawing::Point(1396, 677);
 			this->label36->Name = L"label36";
 			this->label36->Size = System::Drawing::Size(53, 20);
 			this->label36->TabIndex = 89;
@@ -1242,7 +1310,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab4_Nmax
 			// 
-			this->tab4_Nmax->Location = System::Drawing::Point(1137, 499);
+			this->tab4_Nmax->Location = System::Drawing::Point(1455, 677);
 			this->tab4_Nmax->Name = L"tab4_Nmax";
 			this->tab4_Nmax->Size = System::Drawing::Size(110, 20);
 			this->tab4_Nmax->TabIndex = 88;
@@ -1253,7 +1321,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label37->AutoSize = true;
 			this->label37->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label37->Location = System::Drawing::Point(1088, 422);
+			this->label37->Location = System::Drawing::Point(1406, 600);
 			this->label37->Name = L"label37";
 			this->label37->Size = System::Drawing::Size(29, 20);
 			this->label37->TabIndex = 87;
@@ -1261,18 +1329,18 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab4_u0
 			// 
-			this->tab4_u0->Location = System::Drawing::Point(1137, 424);
+			this->tab4_u0->Location = System::Drawing::Point(1455, 602);
 			this->tab4_u0->Name = L"tab4_u0";
 			this->tab4_u0->Size = System::Drawing::Size(110, 20);
 			this->tab4_u0->TabIndex = 86;
-			this->tab4_u0->Text = L"2.0";
+			this->tab4_u0->Text = L"10";
 			// 
 			// label38
 			// 
 			this->label38->AutoSize = true;
 			this->label38->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label38->Location = System::Drawing::Point(878, 499);
+			this->label38->Location = System::Drawing::Point(1196, 677);
 			this->label38->Name = L"label38";
 			this->label38->Size = System::Drawing::Size(64, 20);
 			this->label38->TabIndex = 85;
@@ -1280,7 +1348,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab4_h
 			// 
-			this->tab4_h->Location = System::Drawing::Point(944, 538);
+			this->tab4_h->Location = System::Drawing::Point(1262, 716);
 			this->tab4_h->Name = L"tab4_h";
 			this->tab4_h->Size = System::Drawing::Size(110, 20);
 			this->tab4_h->TabIndex = 84;
@@ -1291,7 +1359,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label39->AutoSize = true;
 			this->label39->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label39->Location = System::Drawing::Point(899, 536);
+			this->label39->Location = System::Drawing::Point(1217, 714);
 			this->label39->Name = L"label39";
 			this->label39->Size = System::Drawing::Size(29, 20);
 			this->label39->TabIndex = 83;
@@ -1299,7 +1367,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab4_EPS_b
 			// 
-			this->tab4_EPS_b->Location = System::Drawing::Point(944, 499);
+			this->tab4_EPS_b->Location = System::Drawing::Point(1262, 677);
 			this->tab4_EPS_b->Name = L"tab4_EPS_b";
 			this->tab4_EPS_b->Size = System::Drawing::Size(110, 20);
 			this->tab4_EPS_b->TabIndex = 82;
@@ -1310,7 +1378,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label40->AutoSize = true;
 			this->label40->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label40->Location = System::Drawing::Point(899, 460);
+			this->label40->Location = System::Drawing::Point(1217, 638);
 			this->label40->Name = L"label40";
 			this->label40->Size = System::Drawing::Size(19, 20);
 			this->label40->TabIndex = 81;
@@ -1318,7 +1386,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab4_b
 			// 
-			this->tab4_b->Location = System::Drawing::Point(944, 460);
+			this->tab4_b->Location = System::Drawing::Point(1262, 638);
 			this->tab4_b->Name = L"tab4_b";
 			this->tab4_b->Size = System::Drawing::Size(110, 20);
 			this->tab4_b->TabIndex = 80;
@@ -1329,7 +1397,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label41->AutoSize = true;
 			this->label41->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label41->Location = System::Drawing::Point(899, 424);
+			this->label41->Location = System::Drawing::Point(1217, 602);
 			this->label41->Name = L"label41";
 			this->label41->Size = System::Drawing::Size(19, 20);
 			this->label41->TabIndex = 79;
@@ -1337,7 +1405,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab4_a
 			// 
-			this->tab4_a->Location = System::Drawing::Point(944, 424);
+			this->tab4_a->Location = System::Drawing::Point(1262, 602);
 			this->tab4_a->Name = L"tab4_a";
 			this->tab4_a->Size = System::Drawing::Size(110, 20);
 			this->tab4_a->TabIndex = 78;
@@ -1345,9 +1413,9 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			// tab4_richTextBox1
 			// 
-			this->tab4_richTextBox1->Location = System::Drawing::Point(876, 130);
+			this->tab4_richTextBox1->Location = System::Drawing::Point(1196, 142);
 			this->tab4_richTextBox1->Name = L"tab4_richTextBox1";
-			this->tab4_richTextBox1->Size = System::Drawing::Size(374, 263);
+			this->tab4_richTextBox1->Size = System::Drawing::Size(374, 454);
 			this->tab4_richTextBox1->TabIndex = 77;
 			this->tab4_richTextBox1->Text = L"";
 			// 
@@ -1355,7 +1423,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			// 
 			this->tab4_button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->tab4_button1->Location = System::Drawing::Point(1059, 580);
+			this->tab4_button1->Location = System::Drawing::Point(1377, 758);
 			this->tab4_button1->Name = L"tab4_button1";
 			this->tab4_button1->Size = System::Drawing::Size(191, 62);
 			this->tab4_button1->TabIndex = 76;
@@ -1368,7 +1436,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label42->AutoSize = true;
 			this->label42->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label42->Location = System::Drawing::Point(1153, 64);
+			this->label42->Location = System::Drawing::Point(1482, 72);
 			this->label42->Name = L"label42";
 			this->label42->Size = System::Drawing::Size(87, 20);
 			this->label42->TabIndex = 75;
@@ -1380,7 +1448,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label43->BackColor = System::Drawing::Color::White;
 			this->label43->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 44.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label43->Location = System::Drawing::Point(880, 34);
+			this->label43->Location = System::Drawing::Point(1209, 42);
 			this->label43->Name = L"label43";
 			this->label43->Size = System::Drawing::Size(49, 67);
 			this->label43->TabIndex = 74;
@@ -1391,7 +1459,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label44->AutoSize = true;
 			this->label44->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label44->Location = System::Drawing::Point(935, 64);
+			this->label44->Location = System::Drawing::Point(1264, 72);
 			this->label44->Name = L"label44";
 			this->label44->Size = System::Drawing::Size(81, 20);
 			this->label44->TabIndex = 73;
@@ -1402,7 +1470,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->label45->AutoSize = true;
 			this->label45->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label45->Location = System::Drawing::Point(935, 44);
+			this->label45->Location = System::Drawing::Point(1264, 52);
 			this->label45->Name = L"label45";
 			this->label45->Size = System::Drawing::Size(212, 20);
 			this->label45->TabIndex = 72;
@@ -1413,50 +1481,31 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			this->tab4_dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->tab4_dataGridView1->Location = System::Drawing::Point(6, 405);
 			this->tab4_dataGridView1->Name = L"tab4_dataGridView1";
-			this->tab4_dataGridView1->Size = System::Drawing::Size(866, 237);
+			this->tab4_dataGridView1->Size = System::Drawing::Size(1184, 415);
 			this->tab4_dataGridView1->TabIndex = 71;
 			// 
 			// tab4_chart1
 			// 
-			chartArea6->Name = L"ChartArea1";
-			this->tab4_chart1->ChartAreas->Add(chartArea6);
+			chartArea8->Name = L"ChartArea1";
+			this->tab4_chart1->ChartAreas->Add(chartArea8);
 			this->tab4_chart1->Cursor = System::Windows::Forms::Cursors::Default;
-			legend6->Name = L"Legend1";
-			this->tab4_chart1->Legends->Add(legend6);
+			legend8->Name = L"Legend1";
+			this->tab4_chart1->Legends->Add(legend8);
 			this->tab4_chart1->Location = System::Drawing::Point(6, 6);
 			this->tab4_chart1->Name = L"tab4_chart1";
-			series6->ChartArea = L"ChartArea1";
-			series6->Legend = L"Legend1";
-			series6->Name = L" График не построен";
-			this->tab4_chart1->Series->Add(series6);
-			this->tab4_chart1->Size = System::Drawing::Size(427, 393);
+			series8->ChartArea = L"ChartArea1";
+			series8->Legend = L"Legend1";
+			series8->Name = L" График не построен";
+			this->tab4_chart1->Series->Add(series8);
+			this->tab4_chart1->Size = System::Drawing::Size(398, 393);
 			this->tab4_chart1->TabIndex = 70;
 			this->tab4_chart1->Text = L"chart1";
-			// 
-			// label46
-			// 
-			this->label46->AutoSize = true;
-			this->label46->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label46->Location = System::Drawing::Point(1078, 536);
-			this->label46->Name = L"label46";
-			this->label46->Size = System::Drawing::Size(44, 20);
-			this->label46->TabIndex = 95;
-			this->label46->Text = L"EPS";
-			// 
-			// tab4_EPS
-			// 
-			this->tab4_EPS->Location = System::Drawing::Point(1137, 536);
-			this->tab4_EPS->Name = L"tab4_EPS";
-			this->tab4_EPS->Size = System::Drawing::Size(110, 20);
-			this->tab4_EPS->TabIndex = 94;
-			this->tab4_EPS->Text = L"1e-6";
 			// 
 			// Window
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1264, 681);
+			this->ClientSize = System::Drawing::Size(1584, 861);
 			this->Controls->Add(this->tabControl1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
@@ -1474,11 +1523,13 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ tab4_chart1
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab2_chart1))->EndInit();
 			this->tabPage3->ResumeLayout(false);
 			this->tabPage3->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab3_chart3))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab3_chart2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab3_dataGridView1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab3_chart1))->EndInit();
 			this->tabPage4->ResumeLayout(false);
 			this->tabPage4->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab4_chart3))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab4_chart2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab4_dataGridView1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->tab4_chart1))->EndInit();
@@ -2014,6 +2065,7 @@ private: System::Void tab3_button1_Click(System::Object^ sender, System::EventAr
 	DataGridView^ dgv = this->tab3_dataGridView1;
 	auto chart1 = this->tab3_chart1;
 	auto chart2 = this->tab3_chart2;
+	auto chart3 = this->tab3_chart3;
 
 	double a, b, EPS_b, h, u0, du0;
 	int Nmax;
@@ -2192,6 +2244,34 @@ private: System::Void tab3_button1_Click(System::Object^ sender, System::EventAr
 		for (size_t j = 0; j < xs.size(); ++j)
 			s->Points->AddXY(us[j], dus[j]);
 	}
+
+	// Chart3: производная v'(x)
+	chart3->Series->Clear();
+	chart3->MouseWheel += gcnew MouseEventHandler(this, &Window::chart_MouseWheel);
+	{
+		auto area = chart3->ChartAreas[0];
+		area->CursorX->LineColor = System::Drawing::Color::Transparent;
+		area->CursorY->LineColor = System::Drawing::Color::Transparent;
+
+		Series^ sLine = gcnew Series();
+		sLine->Name = "v'(x)";
+		sLine->ChartType = SeriesChartType::Line;
+		sLine->BorderWidth = 2;
+
+		Series^ sPoints = gcnew Series();
+		sPoints->Name = "Узлы";
+		sPoints->ChartType = SeriesChartType::Point;
+		sPoints->MarkerSize = 8;
+		sPoints->MarkerStyle = MarkerStyle::Circle;
+
+		chart3->Series->Add(sLine);
+		chart3->Series->Add(sPoints);
+
+		for (size_t j = 0; j < xs.size(); ++j) {
+			sLine->Points->AddXY(xs[j], dus[j]);
+			sPoints->Points->AddXY(xs[j], dus[j]);
+		}
+	}
 }
 
 private: System::Void tab4_button1_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -2208,6 +2288,7 @@ private: System::Void tab4_button1_Click(System::Object^ sender, System::EventAr
 	DataGridView^ dgv = this->tab4_dataGridView1;
 	auto chart1 = this->tab4_chart1;
 	auto chart2 = this->tab4_chart2;
+	auto chart3 = this->tab4_chart3;
 
 	double a, b, EPS_b, h, EPS, u0, du0;
 	int Nmax;
@@ -2445,6 +2526,34 @@ private: System::Void tab4_button1_Click(System::Object^ sender, System::EventAr
 
 		for (size_t j = 0; j < xs.size(); ++j)
 			s->Points->AddXY(us[j], dus[j]);
+	}
+
+	// Chart3: производная v'(x)
+	chart3->Series->Clear();
+	chart3->MouseWheel += gcnew MouseEventHandler(this, &Window::chart_MouseWheel);
+	{
+		auto area = chart3->ChartAreas[0];
+		area->CursorX->LineColor = System::Drawing::Color::Transparent;
+		area->CursorY->LineColor = System::Drawing::Color::Transparent;
+
+		Series^ sLine = gcnew Series();
+		sLine->Name = "v'(x)";
+		sLine->ChartType = SeriesChartType::Line;
+		sLine->BorderWidth = 2;
+
+		Series^ sPoints = gcnew Series();
+		sPoints->Name = "Узлы";
+		sPoints->ChartType = SeriesChartType::Point;
+		sPoints->MarkerSize = 8;
+		sPoints->MarkerStyle = MarkerStyle::Circle;
+
+		chart3->Series->Add(sLine);
+		chart3->Series->Add(sPoints);
+
+		for (size_t j = 0; j < xs.size(); ++j) {
+			sLine->Points->AddXY(xs[j], dus[j]);
+			sPoints->Points->AddXY(xs[j], dus[j]);
+		}
 	}
 }
 };
